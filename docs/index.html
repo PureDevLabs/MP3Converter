@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, li { font-family:"Arial"; font-size:15px; }
+		p, ul, ol, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+		<h3 class="center alt">MP3 Converter PHP Script Documentation</h3>
+
+		<hr>
+
+		<h1 class="center">MP3 Converter PHP Script</h1>
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Updated: 07/17/2024<br>
+					By: PureDev Labs<br>
+					Source: GitHub
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for using our software. If you have any questions that are beyond the scope of this help file, then please feel free to contact us on <a href="https://github.com/login" target="_blank">GitHub</a>. Thanks again, and Enjoy!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+
+		<hr>
+
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#features">Features</a></li>
+			<li><a href="#server-reqs">Server Requirements</a></li>
+			<li><a href="#server-config">Server Configuration</a></li>
+			<li><a href="#software-install">Software Installation</a></li>
+			<li><a href="#support">Support Options</a></li>
+		</ol>
+
+		<hr>
+
+		<h3 id="features"><strong>A) Features</strong> - <a href="#toc">top</a></h3>
+		<p>This software does the following for you:</p>
+		<ul>			
+			<li>Downloads &#38; converts YouTube, SoundCloud, Facebook, Twitter, Vimeo, Dailymotion, Instagram, TikTok, VK, and/or AOL content (10 of the most popular video/audio hosting sites in the world)</li>
+			<li>Outputs converted files to MP3 audio format</li>
+			<li>Displays download AND conversion progress via corresponding progress bars</li>
+			<li>Leverages the power of <a href="https://ffmpeg.org/" target="_blank">FFmpeg</a> to create crisp, clean, quality conversions of video files</li>
+			<li>Features a completely &#8220;responsive&#8221; default design (leveraging the Bootstrap framework) to provide optimal viewing for ALL device types and sizes</li>
+			<li>Provides the ability to easily incorporate static pages (e.g., About, FAQ, and Contact pages) as well as rudimentary &#8220;templating&#8221; support via common header/footer files</li>
+			<li>Includes a &#8220;Config Check&#8221; utility to facilitate the software&#8217;s installation and help resolve any issues with the server configuration</li>			
+			<li>Programmed entirely in easy-to-read PHP OOP (Object Oriented Programming), JavaScript/jQuery, and CSS to facilitate effortless editing/customization of code</li>
+		</ul>		
+
+		<hr>
+
+		<h3 id="server-reqs"><strong>B) Server Requirements</strong> - <a href="#toc">top</a></h3>
+		<p>This software requires the following:</p>
+		<ul>
+			<li>Linux Server (All Linux distributions supported)</li>
+			<li>For commercial servers: Shared*, Dedicated, and VPS hosting supported</li>
+			<li>Apache</li>
+			<li>PHP 5.6+</li>
+			<li>cURL and PHP cURL extension enabled</li>
+			<li>FFmpeg and libmp3lame codec installed</li>
+			<li><a href="https://nodejs.org/en/download/package-manager/" target="_blank">Node.js</a> (for YouTube support, only)</li>			
+			<li>That's it!</li>
+		</ul>
+		<p>* Note: If you're using a shared hosting plan, then please ensure that FFmpeg and cURL are installed.</p>
+
+		<hr>
+
+		<h3 id="server-config"><strong>C) Server Configuration </strong> - <a href="#toc">top</a></h3>
+		<p>Need help setting up the server?:</p>
+		<ul>
+			<li>When in doubt, have a pro admin or hosting provider install the required dependency packages for you.</li>
+			<li>In general, we strongly recommend installing <a href="https://puredevlabs.cc/knowledgebase/1/How-To-Install-aaPanel-Free-Webpanel-incl.-LAMP.html?shop=1" target="_blank">the free aaPanel hosting control panel</a> instead of using the command line to achieve a comparable server configuration. (See the <a href="https://www.aapanel.com/" target="_blank">aaPanel homepage</a>.)</li>
+			<li>Moreover, if you want a <i>precompiled</i> version of FFmpeg + codecs <u>for your Linux server</u>, then you can perform a simple, one-click installation of both via the software's initial "Config Check" utility!</li>
+			<li>Recent, static (i.e., <i>precompiled</i>) builds of FFmpeg are also <a href="http://johnvansickle.com/ffmpeg/" target="_blank">available for download via the FFmpeg.org website</a>. (Use <a href="https://puredevlabs.cc/knowledgebase/4/How-To-install-FFmpeg.html?shop=1" target="_blank">our guide</a> for their installation!)</li>
+			<li>For the "Do-It-Yourselfers", general command-line instructions (for installing ALL required software dependencies) are available for the following, popular Linux distributions:
+				<ol>
+					<li><a href="config/Ubuntu-12.04-SETUP.htm">Ubuntu 12.04</a></li>
+					<li><a href="config/Debian-7-Wheezy-SETUP.htm">Debian 7</a></li>
+					<li><a href="config/CentOS-6.x-SETUP.htm">CentOS 6.x</a></li>
+				</ol>
+			</li>
+			<li>A <a href="http://trac.ffmpeg.org/wiki/CompilationGuide" target="_blank">compilation guide for FFmpeg + codecs</a>, catering to an array of Linux distributions, is also available on <a href="http://trac.ffmpeg.org/wiki/CompilationGuide" target="_blank">the FFmpeg.org wiki site</a>.</li>
+		</ul>
+
+		<hr>
+
+		<h3 id="software-install"><strong>D) Software Installation</strong> - <a href="#toc">top</a></h3>
+		<p>To install the software:</p>
+		<ol>
+			<li>Unpack/Unzip the distribution file and upload the contents to a new directory on your web server.</li>
+			<li>Navigate to index.php of your new directory and follow the prompts in the software's initial "Config Check" utility to ensure successful software/server configuration.</li>
+			<li>Ensure that the 'store' folder in your new directory has write (e.g., chmod 0777) permissions.</li>
+			<li>Set the location of FFmpeg in "lib/Config.php" via the _FFMPEG constant value. On Linux, this will generally be something like "/usr/bin/ffmpeg" or "/usr/local/bin/ffmpeg".</li>
+			<li>Configure additional constants/variables in "lib/Config.php" as needed.</li>
+			<li>Ensure all "Required Settings" in the "Config Check" utility are OK, exit the utility, and start converting videos!</li>
+		</ol>
+
+		<hr>
+
+		<h3 id="support"><strong>E) Support Options</strong> - <a href="#toc">top</a></h3>
+		<p>Stuff you might like to know about software suport:</p>
+		<ol>
+			<li>100% Free support for life!
+				<ul>
+					<li>Ask us a question, and we'll answer it!</li>
+					<li>Working directly on your server is not free.</li>
+				</ul>
+			</li>
+			<li>Regular updates/fixes to the software are FREE! 
+				<ul>
+					<li>You will receive email notifications when new versions are released.</li>
+					<li>You can log in and download the software anytime via <a href="https://github.com/login" target="_blank">GitHub</a>.</li>
+				</ul>
+			</li>
+			<li>See <a href="faq.html" target="_blank"><b>The Official FAQ</b></a> for ways to troubleshoot common issues.</li>
+			<li>Human support for this script is provided by:
+				<ul>
+					<li>Posting Issues and Discussions via your <a href="https://github.com/login" target="_blank">GitHub</a> account (for technical support)</li>
+				</ul>
+			</li>
+		</ol>
+
+		<hr>
+
+		<p>Once again, thank you so much for using our software, and please contact us with any additional questions or concerns. You can send us a message, day or night, via your <a href="https://github.com/login" target="_blank">GitHub</a> account.</p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

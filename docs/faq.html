@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" id="vbulletin_html">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <title>Official FAQ</title>
+  <link rel="stylesheet" type="text/css" href="assets/blueprint-css/csstidyonline.results.css" />
+  <style type="text/css">
+  	body {font-family:Verdana;color:#333;margin:0;}
+  	font[size='3'] {color:#333;font-family:Verdana;font-weight:bold;}
+  	font[size='6'] {color:#333;font-family:Tahoma,"Trebuchet MS",Georgia;}
+  	font[size='5'] {font-family:Tahoma,"Trebuchet MS",Georgia;}
+  	font[color='Navy'] {font-family:Verdana;font-weight:normal;}
+  	#FAQ-list {margin:24px 0;font-size:14px;line-height:18px;background-color:#f9f9f9;padding:10px;}
+  	#FAQ-list ul {list-style-type:none;margin:0;padding:0;}
+  	#FAQ-list ul li {list-style:none;background:url('assets/images/arrow2.gif') 0px 2px no-repeat;margin:11px 0;padding:0 0 0 25px;}
+  	.backtotop {margin:18px 0 11px 0;}
+  	.backtotop a {background:url('assets/images/backtotop.gif') 0px bottom no-repeat;padding:0 0 0 20px;}
+  </style>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+		/*if (window.location != window.parent.location)
+		{
+			var anchor = document.referrer.split("#");
+			if (anchor.length > 1)
+			{
+				$("a [name='"+anchor[anchor.length-1]+"']")[0].scrollIntoView(true);
+			}
+		}*/
+	});
+  </script>
+</head>
+<body>
+<div class="postbody" style="width:780px;margin:10px 0 40px 0;font-size:110%">
+
+			<div class="postrow has_after_content">
+
+
+				<h2 class="title icon">
+					The Official FAQ
+				</h2>
+
+
+
+
+
+				<div class="content">
+					<div id="post_message_1365061">
+						<blockquote class="postcontent restore">
+							<font size="6"><b>FAQ</b></font> <span style="font-family: Verdana"><font size="3"><font color="Navy">:: Common questions/answers related to troubleshooting hardware/software issues</font></font></span><br>
+<br>
+<i>(I will modify and add to this list as needed and as my time permits!)</i><br>
+<div id="FAQ-list">
+<ul>
+<li><a href="#one">I opened index.php and see a blank page. What should I do?</a></li>
+<li><a href="#four">I opened index.php and see something like: "Parse error: syntax error, unexpected T_FUNCTION in /home/user/public_html/index.php on line...". What should I do?</a></li>
+<li><a href="#five">I opened index.php and see the following message: "This domain is not authorized to access this software!". What should I do?</a></li>
+<li><a href="#six">When I enter a URL and click the "Convert" button, the page reloads and I see a bunch of strange characters and symbols filling up the screen. Why is this?</a></li>
+<li><a href="#seven">When I enter a URL and click the "Convert" button, the page reloads, shows me a "Download" progress bar, and nothing happens and/or I see the message "Error downloading remote file!" (or "Error downloading video!"). Why is this?</a></li>
+<li><a href="#eight">Videos are downloaded and converted, but I never see the download progress bar (only the conversion progress bar appears). How come?</a></li>
+<li><a href="#nine">The video download completes, the "Conversion" progress bar is shown, and then nothing happens and/or I see the message "Error generating converted file!". What can I do?</a></li>
+<li><a href="#twelve">How long are converted files saved on the server?</a></li>
+<li><a href="#thirteen">How can I integrate the software into my existing website? Can I run the software inside an HTML &lt;iframe&gt;?</a></li>
+<li><a href="#fourteen">I think a supported video hosting site is blocking or banning my IP address, and/or I am experiencing a CAPTCHA when trying to connect to a video page. What can I do?</a></li>
+<li><a href="#fifteen">I think a video or group of videos is blocked in my server's country. What can I do?</a></li>
+</ul>
+</div>
+<a name="one"></a><b><font size="5"><font color="Red">Q.</font></font></b> <font size="3"><b>I opened <span class="skimlinks-unlinked">index.php</span> and see a blank page. What should I do?</b></font><br>
+<b><font size="5"><font color="DarkGreen">A.</font></font></b> First, turn on error reporting in <span class="skimlinks-unlinked">index.php</span> by editing the following line (at the very top of the file) like so:<br>
+<br>
+<div class="bbcode_container">
+	<div class="bbcode_description">PHP Code:</div>
+	<div class="bbcode_code" style="height:36px;"><code><code><span style="color: #000000">
+<span style="color: #0000BB">ini_set</span><span style="color: #007700">(</span><span style="color: #DD0000">'display_errors'</span><span style="color: #007700">,</span><span style="color: #0000BB">1</span><span style="color: #007700">);&nbsp;
+<br></span><span style="color: #0000BB"></span>
+</span>
+</code></code></div>
+</div>This can also be accomplished with:<br>
+<br>
+<div class="bbcode_container">
+	<div class="bbcode_description">PHP Code:</div>
+	<div class="bbcode_code" style="height:36px;"><code><code><span style="color: #000000">
+<span style="color: #0000BB">error_reporting</span><span style="color: #007700">(</span><span style="color: #0000BB">E_ALL</span><span style="color: #007700">);&nbsp;
+<br></span><span style="color: #0000BB"></span>
+</span>
+</code></code></div>
+</div>Both commands will enable the output of PHP errors to the browser.<br>
+<br>
+Also, check your Apache error log for PHP errors and warnings.<br>
+<br>
+If you see a PHP error or warning that you don't understand, please copy and paste the error into Google and behold the plethora of other people who have experienced -- and overcome -- similar errors. Leverage Google to your advantage in this case, and benefit from the experiences of others who have had the same problem.<br>
+<div class="backtotop"><a href="#" onclick="$(window).scrollTop(0);">Back To Top</a></div>
+<br>
+<a name="four"></a><font color="Red"><b><font size="5">Q.</font></b></font>  <font size="3"><b>I opened <span class="skimlinks-unlinked">index.php</span> and see something like: "Parse error: syntax error, unexpected T_FUNCTION in /home/user/public_html/<span class="skimlinks-unlinked">index.php</span> on line...". What should I do?</b></font><br>
+<b><font size="5"><font color="DarkGreen">A.</font></font></b> This is generally an indication that you do not have at least PHP 5.3 installed. Anonymous functions usually cause this error, and they were not introduced until PHP 5.3. You need to install PHP 5.3+ to eliminate this error.<br>
+<div class="backtotop"><a href="#" onclick="$(window).scrollTop(0);">Back To Top</a></div>
+<br>
+<a name="five"></a><font color="Red"><b><font size="5">Q.</font></b></font>  <font size="3"><b>I  opened <span class="skimlinks-unlinked">index.php</span> and see the following message: "This domain is not authorized to access this software!".  What should I do?</b></font><br>
+<b><font size="5"><font color="DarkGreen">A.</font></font></b> Open <span class="skimlinks-unlinked">"lib/Config.php"</span> and edit the $_authorizedDomains array to include all domain names (and subdomains!) that are allowed to access/display the software. ("www" IS a subdomain! If you want "<span class="skimlinks-unlinked">www.yoursite.com</span>" as well as "<span class="skimlinks-unlinked">yoursite.com</span>" to work, then you must include both!) For example:<br>
+<br>
+<div class="bbcode_container">
+	<div class="bbcode_description">PHP Code:</div>
+	<div class="bbcode_code" style="height:156px;"><code><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;</span><span style="color: #0000BB">$_authorizedDomains&nbsp;</span><span style="color: #007700">=&nbsp;array(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;List&nbsp;of&nbsp;domain&nbsp;(and&nbsp;subdomain!)&nbsp;names&nbsp;authorized&nbsp;to&nbsp;run&nbsp;this&nbsp;software.&nbsp;Do&nbsp;NOT&nbsp;prepend&nbsp;domains&nbsp;with&nbsp;'http://'&nbsp;or&nbsp;'https://'!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;//&nbsp;"www"&nbsp;IS&nbsp;a&nbsp;subdomain!&nbsp;If&nbsp;you&nbsp;want&nbsp;"www.yoursite.com"&nbsp;as&nbsp;well&nbsp;as&nbsp;"yoursite.com"&nbsp;to&nbsp;work,&nbsp;then&nbsp;you&nbsp;must&nbsp;include&nbsp;both&nbsp;below!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;//&nbsp;Leave&nbsp;this&nbsp;array&nbsp;empty&nbsp;to&nbsp;allow&nbsp;all&nbsp;domain&nbsp;names&nbsp;to&nbsp;access&nbsp;the&nbsp;software.&nbsp;(NOT&nbsp;RECOMMENDED!!)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'localhost'</span><span style="color: #007700">,<br>&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'yourconversionsite.com'</span><span style="color: #007700">,<br>&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'www.yourconversionsite.com'</span><span style="color: #007700">,<br>&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'anothersite.com'</span><span style="color: #007700">,<br>&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'www.anothersite.com'</span><span style="color: #007700">,<br>&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'208.67.222.222'<br></span><span style="color: #007700">);&nbsp;
+<br></span><span style="color: #0000BB"></span>
+</span>
+</code></code></div>
+</div>
+Leaving this array empty will allow ALL domains to access your software. (NOT RECOMMENDED!!)<br>
+<div class="backtotop"><a href="#" onclick="$(window).scrollTop(0);">Back To Top</a></div>
+<br>
+<a name="six"></a><font color="Red"><b><font size="5">Q.</font></b></font> <font size="3"><b>When I enter a URL and click the "Convert" button, the page reloads and I see a bunch of strange characters and symbols filling up the screen. Why is this?</b></font><br>
+<font color="DarkGreen"><b><font size="5">A.</font></b></font> Please ensure that your 'store/videos/' directory is chmod to 0777 permissions. The script is trying to send the video download to the 'store/videos/' directory, but adequate permissions are not set. So the raw, downloaded data has nowhere to go and is ultimately output to the screen.<br>
+<div class="backtotop"><a href="#" onclick="$(window).scrollTop(0);">Back To Top</a></div>
+<br>
+<a name="seven"></a><font color="Red"><b><font size="5">Q.</font></b></font> <font size="3"><b>When I enter a URL and click the "Convert" button, the page reloads, shows me a "Download" progress bar, and nothing happens and/or I see the message "Error downloading remote file!" (<i>or</i> "Error downloading video!"). Why is this?</b></font><br>
+<font color="DarkGreen"><b><font size="5">A.</font></b></font> First, ensure that at least one supported site module and corresponding PHP file exists in the 'lib/extractors' directory.<br>
+<br>
+Ensure that you have installed recent versions of both cURL and the PHP cURL extension. <br>
+<br>
+Verify that the _TEMPVIDDIR constant in <span class="skimlinks-unlinked">"lib/Config.php"</span> is the correct path to your 'store/videos/' directory. <br>
+<br>
+If you have moved this directory to outside of the web root, then you will have to use an absolute path instead of a relative path. <br>
+<br>
+Verify that <span class="skimlinks-unlinked">software.xml</span> exists in your software's 'store' directory, and that the file is chmod to 0777 permissions. Also, ensure that 'store' directory permissions allow programmatic modification of <span class="skimlinks-unlinked">software.xml</span>. If <span class="skimlinks-unlinked">software.xml</span> exists, try deleting the file and allowing it to automatically regenerate.<br>
+<br>
+Check the contents of your 'store/videos/' directory. Are there video files in the directory? If so, are the video files playable? Are the videos fully downloaded? Are the videos 0 kb in length?<br>
+<br>
+Try executing a simple PHP cURL request to the video hosting site's video page, and return the contents of the page to the screen. For example, place the following code in a new file, replacing "{video page URL}" with a valid, supported video page URL:<br>
+<br>
+<div class="bbcode_container">
+	<div class="bbcode_description">PHP Code:</div>
+	<div class="bbcode_code" style="height:276px;"><code><code><span style="color: #000000">
+<span style="color: #0000BB">&lt;?php&nbsp;<br></span><span style="color: #FF8000">//&nbsp;create&nbsp;a&nbsp;new&nbsp;cURL&nbsp;resource&nbsp;<br></span><span style="color: #0000BB">$ch&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">curl_init</span><span style="color: #007700">();&nbsp;&nbsp;<br><br></span><span style="color: #FF8000">//&nbsp;set&nbsp;URL&nbsp;and&nbsp;other&nbsp;appropriate&nbsp;options&nbsp;<br></span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_URL</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"{video page URL}"</span><span style="color: #007700">);&nbsp;<br></span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_HEADER</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">);<br></span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_FOLLOWLOCATION</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">);&nbsp;<br><br></span><span style="color: #FF8000">//&nbsp;grab&nbsp;URL&nbsp;and&nbsp;pass&nbsp;it&nbsp;to&nbsp;the&nbsp;browser&nbsp;<br></span><span style="color: #0000BB">curl_exec</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">);<br><br></span><span style="color: #FF8000">//&nbsp;print&nbsp;out&nbsp;any&nbsp;cURL&nbsp;errors&nbsp;as&nbsp;well&nbsp;as&nbsp;HTTP&nbsp;response&nbsp;information<br></span><span style="color: #007700">echo&nbsp;</span><span style="color: #DD0000">'Curl&nbsp;error:&nbsp;('&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">curl_errno</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">')&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">curl_error</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'&lt;br&gt;'</span><span style="color: #007700">;<br></span><span style="color: #0000BB">print_r</span><span style="color: #007700">(</span><span style="color: #0000BB">curl_getinfo</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">));&nbsp;&nbsp;<br><br></span><span style="color: #FF8000">//&nbsp;close&nbsp;cURL&nbsp;resource,&nbsp;and&nbsp;free&nbsp;up&nbsp;system&nbsp;resources&nbsp;<br></span><span style="color: #0000BB">curl_close</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">);&nbsp;<br></span><span style="color: #0000BB">?&gt;</span>
+</span>
+</code></code></div>
+</div>Save the file, upload it to your server, and open it in a browser. Do you see the HTML page located at that URL? If the video is blocked in your server's country, then this will be indicated in the screen's output. A blank page or CAPTCHA screen could indicate that your IP has either been temporarily banned or flagged (via the CAPTCHA) for exceeding video pull quota limits. It could also mean that your server is having networking issues.<br>
+<br>
+Ensure that the PHP "safe_mode" directive is set to "Off" and the PHP "open_basedir" directive is set to no value or "". Both directives can be modified in your server's <span class="skimlinks-unlinked">php.ini</span> file, PHP's main configuration file on your server.<br>
+<br>
+Finally, check your Apache error log for PHP errors and warnings.<br>
+<div class="backtotop"><a href="#" onclick="$(window).scrollTop(0);">Back To Top</a></div>
+<br>
+<a name="eight"></a><font color="Red"><b><font size="5">Q.</font></b></font> <font size="3"><b>Videos are downloaded and converted, but I never see the download progress bar (only the conversion progress bar appears). How come?</b></font><br>
+<font color="DarkGreen"><b><font size="5">A.</font></b></font> This could be an indication of a networking problem on your server (relating to the configuration of network card software on your server). Contact your hosting provider to see if there is anything that they can do on their end.<br>
+<br>
+This might be a cURL, PHP cURL extension, or PHP output buffering issue. Verify that cURL, PHP, and the PHP cURL extension are installed and configured correctly. Check the output buffering directives in your server's <span class="skimlinks-unlinked">php.ini</span>.<br>
+<br>
+Your server might have a very fast download speed. If the speed is fast enough, consistently, it is possible that the download progress bar is absent because it never has a chance to clear the output buffer before the download completes.<br>
+<br>
+If you are running cPanel, Plesk, Virtualmin, or a similar hosting control panel software, check to see if any of the settings in your control panel are conflicting with the download progress bar. In particular, via your control panel or otherwise, try configuring PHP to run as an Apache module instead of via a CGI wrapper (or vice versa?). Often, adjusting this setting will cause the download progress bar to start working.<br>
+<br>
+Try disabling Nginx as an Apache/HTTP accelerator and/or reverse proxy server. Nginx can be configured (with Apache and PHP) in such a way that it may interfere with the progress bar.<br>
+<br>
+Also, since progress bar performance is dependent on PHP version, ensure that the _PHP_VERSION constant in "lib/Config.php" is set to the correct PHP version number.<br>
+<div class="backtotop"><a href="#" onclick="$(window).scrollTop(0);">Back To Top</a></div>
+<br>
+<a name="nine"></a><font size="5"><font color="Red"><b>Q.</b></font></font> <b><font size="3">The video download completes, the "Conversion" progress bar is shown, and then nothing happens and/or I see the message "Error generating converted file!". What can I do?</font></b><br>
+<font size="5"><font color="DarkGreen"><b>A.</b></font></font> First, check that the _FFMPEG constant value in <span class="skimlinks-unlinked">"lib/Config.php"</span> points to the correct location of FFmpeg on your server. On Linux, you can locate the FFmpeg binary file via the "which ffmpeg" or "type ffmpeg" commands in the command line interface.<br>
+<br>
+Ensure that both the 'store/mp3/' and 'store/logs/' directories are chmod to 0777 permissions.<br>
+<br>
+Check to see if videos are actually being downloaded (to 'store/videos/') prior to conversion.<br>
+<br>
+Check your 'store/logs/' directory for FFmpeg log files. Are there any log files in the directory? If so, look for errors in a log file that corresponds to a failed conversion.<br>
+<br>
+Does FFmpeg work from the command console? Try running a FFmpeg command directly in the command line interface. Preferably, run a command that is executed by my software during conversions.<br>
+<br>
+Are you running the most recent version of FFmpeg? (Check your FFmpeg version by typing "ffmpeg" in the command console. If the dates shown in the resulting output are more than 1-2 years old, <i>or</i> the version number is less than 3.3.4, then you may have an outdated version of FFmpeg.) Also, my software may not work as expected with FFmpeg builds downloaded from the apt-get (or yum, etc.) repositories. Instead, try downloading a recent, static build <a sl-processed="1" href="http://johnvansickle.com/ffmpeg/" target="_blank">from here</a>. <a sl-processed="1" href="https://puredevlabs.cc/knowledgebase/4/How-To-install-FFmpeg.html?shop=1" target="_blank">This tutorial</a> can assist you further with this process.<br>
+<br>
+You may need to set permissions of the FFmpeg binary file to 0777, or lower -- if possible, so that my software has permission to access FFmpeg. This especially holds true for people using a static build of FFmpeg.<br>
+<br>
+Have you installed the libmp3lame codec on your server? You can check quickly by executing a command like the following in the console: "ffmpeg -codecs | grep mp3". The word or phrase after "grep" tells FFmpeg how to filter the installed codecs (you can change this search word or phrase as needed). When you enter this command, check for a capital "E" in front of the codec name ("E" signifies that you can encode with this codec). If the "E" is missing, then there is something wrong with the codec installation.<br>
+<br>
+If you have moved the 'store/mp3/' and 'store/logs/' directories to outside of the web root, then you will have to use an absolute path instead of a relative path for the corresponding constant values in <span class="skimlinks-unlinked">"lib/Config.php"</span>.<br>
+<br>
+An improperly configured DNS can cause HTTP requests (made from your server to exec_ffmpeg.php) to fail. To test this possibility, save the following code to a file, and then load the file in a web browser:<br>
+<br>
+<div class="bbcode_container">
+	<div class="bbcode_description">PHP Code:</div>
+	<div class="bbcode_code" style="height:276px;"><code><code><span style="color: #000000">
+<span style="color: #0000BB">&lt;?php<br><br></span><span style="color: #FF8000">//&nbsp;create&nbsp;a&nbsp;new&nbsp;cURL&nbsp;resource<br></span><span style="color: #0000BB">$ch&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">curl_init</span><span style="color: #007700">();<br><br></span><span style="color: #FF8000">//&nbsp;set&nbsp;URL&nbsp;and&nbsp;other&nbsp;appropriate&nbsp;options<br></span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_URL</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"http://www.your-domain-here.com"</span><span style="color: #007700">);<br></span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_HEADER</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">);<br></span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_FOLLOWLOCATION</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">);<br><br></span><span style="color: #FF8000">//&nbsp;grab&nbsp;URL&nbsp;and&nbsp;pass&nbsp;it&nbsp;to&nbsp;the&nbsp;browser<br></span><span style="color: #0000BB">curl_exec</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">);<br><br></span><span style="color: #FF8000">//&nbsp;print&nbsp;out&nbsp;any&nbsp;cURL&nbsp;errors&nbsp;as&nbsp;well&nbsp;as&nbsp;HTTP&nbsp;response&nbsp;information<br></span><span style="color: #007700">echo&nbsp;</span><span style="color: #DD0000">'Curl&nbsp;error:&nbsp;('&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">curl_errno</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">')&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">curl_error</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'&lt;br&gt;'</span><span style="color: #007700">;<br></span><span style="color: #0000BB">print_r</span><span style="color: #007700">(</span><span style="color: #0000BB">curl_getinfo</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">));<br><br></span><span style="color: #FF8000">//&nbsp;close&nbsp;cURL&nbsp;resource,&nbsp;and&nbsp;free&nbsp;up&nbsp;system&nbsp;resources<br></span><span style="color: #0000BB">curl_close</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">);<br><br></span><span style="color: #0000BB">?&gt;</span>
+</span>
+</code></code></div>
+</div>
+Now repeat the process, substituting "http://www.your-domain-here.com" with "http://www.google.com" (or any other domain name other than your site's domain name!) this time.<br>
+<br>
+If the above code consistently <i>fails</i> for any reason, in any way, when CURLOPT_URL is set to "http://www.your-domain-here.com", but consistently <i>works</i> when CURLOPT_URL is set to "http://www.google.com" (or any other domain name other than your site's domain name!), then you likely have an issue with your DNS. Evidently, HTTP requests made from your server are able to correctly resolve the DNS of all sites except your own -- indicating an issue with your own DNS configuration. Possible fixes include using another DNS provider, changing nameservers, and/or having a professional configure your DNS for you.<br>
+<div class="backtotop"><a href="#" onclick="$(window).scrollTop(0);">Back To Top</a></div>
+<br>
+<a name="twelve"></a><font size="5"><font color="Red"><b>Q.</b></font></font> <font size="3"><b>How long are converted files saved on the server?</b></font><br>
+<font color="DarkGreen"><b><font size="5">A.</font></b></font> The short answer: Indefinitely. By default, the software does not allow for the periodic removal of converted files.<br>
+<br>
+If you need this, then you can write a short PHP script that iterates through and removes old, converted files based on the <a href="http://php.net/manual/en/function.filemtime.php" onclick="window.open(this.href); return false;">last modified time</a> of each file in the 'store/mp3/' directory, and then run this script as a regular cron job (scheduled task) on your server.<br>
+<br>
+Alternatively, in a pinch, you could instead create a simple bash script like the following, e.g.:<br>
+<br>
+<div class="bbcode_container">
+	<div class="bbcode_description">Code:</div>
+	<div class="bbcode_code" style="height:90px;"><code><code><span style="color: #000000">
+#!/bin/bash<br>
+<br>
+find /var/www/store/mp3/* -mmin +30 -type f -delete<br>
+find /var/www/store/logs/* -mmin +30 -type f -delete<br>
+find /var/www/store/videos/* -mmin +30 -type f -delete
+</span>
+</code></code></div>
+</div>
+...save the script file with at least 0755 permissions, and then run it as a regular cron job. (Note: You will need to edit the folder paths to reflect the correct paths on your server.) This will automatically delete all files older than 30 minutes, in the corresponding software folders, every time the cron job runs.<br>
+<div class="backtotop"><a href="#" onclick="$(window).scrollTop(0);">Back To Top</a></div>
+<br>
+<a name="thirteen"></a><font size="5"><font color="Red"><b>Q.</b></font></font> <font size="3"><b>How can I integrate the software into my existing website? Can I run the software inside an HTML &lt;iframe&gt;?</b></font><br>
+<font color="DarkGreen"><b><font size="5">A.</font></b></font> The easiest way to integrate the software into an existing site is to load the software's <span class="skimlinks-unlinked">index.php</span> inside an iframe (on your site). The iframe size will need to be large enough to accommodate the software content. You can make the iframe background transparent via HTML/CSS so that it blends in with the rest of your site. Any additional styling of the iframe or iframe contents can be achieved by directly editing the HTML/CSS of the software files. (You may also want to remove the navigation components from the top of the default design/layout.) Finally, be sure to include the following line at the very top of the software's <span class="skimlinks-unlinked">index.php</span>:<br>
+<br>
+<div class="bbcode_container">
+	<div class="bbcode_description">PHP Code:</div>
+	<div class="bbcode_code" style="height:36px;"><code><code><span style="color: #000000">
+<span style="color: #0000BB">header</span><span style="color: #007700">(</span><span style="color: #DD0000">'X-Frame-Options:&nbsp;SAMEORIGIN'</span><span style="color: #007700">);&nbsp;
+<br></span><span style="color: #0000BB"></span>
+</span>
+</code></code></div>
+</div>This header ensures that your iframe cannot be embedded on any other domain but your own.<br>
+<div class="backtotop"><a href="#" onclick="$(window).scrollTop(0);">Back To Top</a></div>
+<br>
+<a name="fourteen"></a><font size="5"><font color="Red"><b>Q.</b></font></font> <font size="3"><b>I think a supported video hosting site is blocking or banning my IP address, and/or I am experiencing a CAPTCHA when trying to connect to a video page. What can I do?</b></font><br>
+<font size="5"><font color="DarkGreen"><b>A.</b></font></font> If you are frequently getting blocked by a supported site, OR you are experiencing a CAPTCHA page, then you can rotate between multiple outgoing IPs for HTTP requests made to that site's servers. (By default, this feature is <u>not</u> included with the software. That said, what follows is a rough guide for its implementation.)<br>
+<br>
+In this case, you need to purchase some additional IP (IPv4) addresses from your hosting provider. (Often your hosting provider will include additional IPs for free with your hosting plan!) Extra IP addresses generally only cost a couple of dollars apiece, and it's reasonable to "start" with 4-5 IPs for the purpose of IP rotation. You can always buy more IPs later and add them to the rotation as needed. That said, the more IPs you have, the better off you will be. In general, the number of additional IPs required for your site is directly proportional to the amount of traffic to your site.<br>
+<br>
+(Note: You may also use "proxy" IPs purchased from a dedicated, 3rd-party proxy provider for this purpose. In general, <u>proxy IPs may be more robust than failover IPs</u> available from your hosting provider. If you use proxies, then you can still <i>loosely</i> follow the remaining instructions in this FAQ section, and then you should <a href="#fifteen">skip to the next section</a> to read more about proxies in general.)<br>
+<br>
+Next, you need to configure these additional IP addresses so that they can be used as "outgoing network interfaces". Simply put, your server needs to be configured so that it can "bind" to these extra IPs for HTTP requests. The easiest way to accomplish this is to have your hosting provider do this for you. If you must do this yourself, then you can refer to OVH's guide for setting up "Network IP Aliasing" for a number of different Linux distributions: <a href="https://docs.ovh.com/ca/en/dedicated/network-ipaliasing/" onclick="window.open(this.href); return false;">https://docs.ovh.com/ca/en/dedicated/network-ipaliasing/</a>.<br>
+<br>
+Once your additional IPs are set up, load the IP addresses into a new database table, and then write some PHP code that cycles through and uses each IP in the table for each new conversion/cURL request. Generally, integrate IPs used as interfaces into your existing PHP cURL requests by adding the following cURL options, e.g.:<br><br>
+<div class="bbcode_container">
+	<div class="bbcode_description">PHP Code:</div>
+<div class="bbcode_code" style="height:84px;"><code><code><span style="color: #000000">
+<span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_INTERFACE</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'208.67.222.222'</span><span style="color: #007700">);<br></span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_REFERER</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">);<br></span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_IPRESOLVE</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURL_IPRESOLVE_V4</span><span style="color: #007700">);<br></span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_SSL_VERIFYHOST</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">FALSE</span><span style="color: #007700">);&nbsp;
+<br></span><span style="color: #0000BB"></span>
+</span>
+</code></code></div></div>
+To ensure that each IP is used equally, increment a 'usage count' field in the database table for each IP address as it's used. So when your code is cycling through IPs in the table, it always finds the IP that has been used the least number of times and uses that IP for the next conversion/cURL request.<br>
+<br>
+If you find that, with IP rotation enabled, you are still experiencing IP bans and/or CAPTCHAs, then that is generally a sign that you need to add more IP addresses to the rotation (to the corresponding database table). You must keep adding IPs until downloads/conversions start working normally.<br>
+<br>
+If you suspect that there is a problem with the IPs themselves, or the IP configuration on your server, then you should first test each additional IP using the following, simple PHP cURL code:<br>
+<br>
+<div class="bbcode_container">
+	<div class="bbcode_description">PHP Code:</div>
+	<div class="bbcode_code" style="height:312px;"><code><code><span style="color: #000000">
+<span style="color: #0000BB">&lt;?php<br></span><span style="color: #FF8000">//&nbsp;create&nbsp;a&nbsp;new&nbsp;cURL&nbsp;resource<br></span><span style="color: #0000BB">$ch&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">curl_init</span><span style="color: #007700">();<br><br></span><span style="color: #FF8000">//&nbsp;set&nbsp;URL&nbsp;and&nbsp;other&nbsp;appropriate&nbsp;options<br></span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_URL</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"{video page URL}"</span><span style="color: #007700">);<br></span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_HEADER</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">);<br></span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_FOLLOWLOCATION</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">);<br></span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_REFERER</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">);<br></span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_INTERFACE</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'23.232.234.2'</span><span style="color: #007700">);&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;Your&nbsp;extra&nbsp;IP&nbsp;goes&nbsp;here!<br></span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_SSL_VERIFYHOST</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">);<br></span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_IPRESOLVE</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURL_IPRESOLVE_V4</span><span style="color: #007700">);<br></span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_SSL_VERIFYPEER</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">);<br><br></span><span style="color: #FF8000">//&nbsp;grab&nbsp;URL&nbsp;and&nbsp;pass&nbsp;it&nbsp;to&nbsp;the&nbsp;browser<br></span><span style="color: #0000BB">curl_exec</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">);<br><br></span><span style="color: #FF8000">//&nbsp;print&nbsp;out&nbsp;any&nbsp;cURL&nbsp;errors&nbsp;as&nbsp;well&nbsp;as&nbsp;HTTP&nbsp;response&nbsp;information<br></span><span style="color: #007700">echo&nbsp;</span><span style="color: #DD0000">'Curl&nbsp;error:&nbsp;('&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">curl_errno</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">')&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">curl_error</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'&lt;br&gt;'</span><span style="color: #007700">;<br></span><span style="color: #0000BB">print_r</span><span style="color: #007700">(</span><span style="color: #0000BB">curl_getinfo</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">));<br><br></span><span style="color: #FF8000">//&nbsp;close&nbsp;cURL&nbsp;resource,&nbsp;and&nbsp;free&nbsp;up&nbsp;system&nbsp;resources<br></span><span style="color: #0000BB">curl_close</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">);<br></span><span style="color: #0000BB">?&gt;</span>
+</span>
+</code></code></div>
+</div>
+
+Ensure that you change the CURLOPT_INTERFACE value to your IP address. Then save the code to a .php file and run it on your server. If you see a video but it won't play, you don't see a video, or you get a cURL error and/or curious HTTP response, then there is something wrong with the IP or its configuration as an outgoing network interface on your server.<br>
+<br>
+To address this issue, on some servers, you can try commenting out this line of code, like so:<br>
+<br>
+<div class="bbcode_container">
+	<div class="bbcode_description">PHP Code:</div>
+<div class="bbcode_code" style="height:36px;"><code><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #FF8000">//curl_setopt($ch,&nbsp;CURLOPT_IPRESOLVE,&nbsp;CURL_IPRESOLVE_V4);&nbsp;
+<br></span><span style="color: #0000BB"></span>
+</span>
+</code></code></div></div>
+
+You can also try completely disabling IPv6 on your server. Please consult with your hosting company or server admin to do this.<br>
+<div class="backtotop"><a href="#" onclick="$(window).scrollTop(0);">Back To Top</a></div>
+<br>
+<a name="fifteen"></a><font size="5"><font color="Red"><b>Q.</b></font></font> <font size="3"><b>I think a video or group of videos is blocked in my server's country. What can I do?</b></font><br>
+<font size="5"><font color="DarkGreen"><b>A.</b></font></font> All countries have some blocked videos. All of them. The only way that you could "unblock" all of these videos is to leverage a global proxy network like Tor: <a href="https://www.torproject.org/docs/documentation.html.en" onclick="window.open(this.href); return false;">https://www.torproject.org/docs/documentation.html.en</a>. In fact, Tor is the only global proxy network that I am aware of at this time, and it is notoriously known for its slow connection speeds.<br>
+<br>
+A more practical approach is to unblock as many videos as you can without spending a lot of extra money, making a lot of extra work for youself, and generally inducing massive, debilitating headaches.<br>
+<br>
+The easiest way to avoid blocked videos is to choose a web server in a country that, generally, has few blocked videos. In my experience, Germany, the United Kingdom, and France have the least number of blocked videos. You would do yourself a favor to choose a datacenter located in one of these countries.<br>
+<br>
+Another way to thwart blocked videos is to use dedicated proxy IPs in your HTTP and download requests. In this case, you can buy one or more proxy IPs from a dedicated, 3rd-party proxy service like <a href="http://instantproxies.com/billing/aff.php?aff=061" onclick="window.open(this.href); return false;">http://instantproxies.com/billing/aff.php?aff=061</a>. Again, perferably, the proxies should be located in Germany, the United Kingdom, or France. Then you integrate the proxy IPs into your PHP cURL requests like so, i.e.:<br>
+<br>
+<div class="bbcode_container">
+	<div class="bbcode_description">PHP Code:</div>
+<div class="bbcode_code" style="height:84px;"><code><code><span style="color: #000000">
+<span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_PROXY</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'208.67.222.222'</span><span style="color: #007700">);<br></span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_USERAGENT</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">);<br></span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_REFERER</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">);<br></span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_SSL_VERIFYPEER</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">FALSE</span><span style="color: #007700">);<br></span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$ch</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CURLOPT_SSL_VERIFYHOST</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">FALSE</span><span style="color: #007700">);&nbsp;
+<br></span><span style="color: #0000BB"></span>
+</span>
+</code></code></div></div>
+
+When using proxies, you should test for a blocked video first by scraping the content of the video page and checking for text that indicates the video is blocked. If the test indicates that a given video is in fact blocked, then you should use a proxy IP. If not, then don't use a proxy IP. The goal is to only use proxy IPs when you need to because, like Tor, using proxies will always be slower than not using proxies. <br>
+<br>
+When choosing proxies, ideally you'll want to do the following:<br>
+<br>
+1) Choose proxies that are geographically very near to your web server. Ideally, the proxy server would be sitting right next to the web server in the same data center.<br>
+2) You are the only person using the proxy server, and you are not using it for anything more than proxy requests.<br>
+3) Your proxy server is not a virtual server running on a physical server that is hosting other virtual proxy instances (that you don't operate).<br>
+4) Spread out your requests to multiple, numerous proxies instead of only having a couple of proxies, for example.<br>
+5) The proxy server(s) should be running with modest CPU load averages and comparable network bandwidth and connection speeds (to your web server).<br>
+<br>
+Do NOT use free proxy IPs. You are sharing those proxies with the rest of the world, and they get banned quickly by popular sites.<br>
+<br>
+I have not yet implemented proxy integration with my software. That said, it is on my "To-Do" list, among other things!<br>
+<div class="backtotop"><a href="#" onclick="$(window).scrollTop(0);">Back To Top</a></div>
+
+						</blockquote>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="after_content">
+
+
+			</div>
+
+			<div class="cleardiv"></div>
+
+</div>
+</body>
+</html>

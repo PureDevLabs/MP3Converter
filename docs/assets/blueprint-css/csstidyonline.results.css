@@ -1,0 +1,4918 @@
+@charset UTF-8;
+
+.bbcode_container
+{
+	display:block;
+	margin:5px 20px 20px;
+}
+
+.bbcode_container .bbcode_desc
+{
+	font-size:12px;
+	margin-bottom:2px;
+}
+
+.bbcode_container div.bbcode_code,.bbcode_container pre.bbcode_code
+{
+	background:#f2f6f8 none repeat-x;
+	border:1px inset;
+	direction:ltr;
+	font-size:12px;
+	margin:0;
+	overflow:scroll;
+	padding:6px;
+	text-align:left;
+}
+
+.bbcode_container code.bbcode_code
+{
+	direction:ltr;
+	font-size:12px;
+	margin:0;
+	text-align:left;
+}
+
+.bbcode_container code.bbcode_code code
+{
+	white-space:nowrap;
+}
+
+.bbcode_container div.bbcode_quote
+{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	background:#f3f3f3 none;
+	border:1px solid #d3d3d3;
+	border-radius:5px;
+	font:italic normal 13px arial,helvetica,sans-serif;
+	margin:0 10px 10px;
+	position:relative;
+	top:0;
+}
+
+.bbcode_container .bbcode_quote_container
+{
+	background:transparent url(http://www.codingforums.com/images/styles/Modern/misc/quote-left.png) no-repeat left;
+	display:block;
+	height:13px;
+	left:-9px;
+	position:absolute;
+	top:5px;
+	width:9px;
+}
+
+.bbcode_quote div.quote_container
+{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	padding:5px 10px;
+}
+
+.bbcode_quote .bbcode_postedby img
+{
+	position:relative;
+	top:1px;
+}
+
+.bbcode_container div.bbcode_quote.printable
+{
+	background:none;
+	border:none;
+}
+
+.bbcode_container div.bbcode_quote div.message
+{
+	padding:8px 0;
+}
+
+.bbcode_container div.bbcode_quote div.message ol>li,.bbcode_container div.bbcode_quote div.message ul>li
+{
+	float:none;
+}
+
+.bbcode_postedby
+{
+	font:normal 12px arial,helvetica,sans-serif;
+}
+
+.bbcode_postedby img
+{
+	margin:0;
+}
+
+.texteditor textarea.cke_source
+{
+	padding:0 1px;
+}
+
+.texteditor.content .cke_skin_kama textarea.cke_source,.texteditor textarea
+{
+	background:#FFF none;
+	color:#222;
+	font:13px arial,helvetica,sans-serif;
+	white-space:pre-wrap;
+}
+
+.texteditor.forum .cke_skin_kama textarea.cke_source,.texteditor.forum textarea
+{
+	background:#FFF none;
+	color:#222;
+	font:13px Verdana,Arial,Tahoma,Calibri,Geneva,sans-serif;
+	white-space:pre-wrap;
+}
+
+.editor_smiliebox
+{
+	_background-color:#FFF;
+	_border:solid 1px #cdc9bf;
+	float:right;
+	height:200px;
+	padding:0 3px 3px;
+	width:75px;
+}
+
+.editor_smiliebox .blocksubhead
+{
+	border:solid 1px #cdc9bf;
+	border-width:1px 0;
+	font-size:12px;
+	font-weight:400;
+	padding:0;
+	text-align:center;
+}
+
+.editor_smiliebox ul.smiliebox
+{
+	height:190px;
+	overflow:hidden;
+}
+
+.editor_smiliebox ul.smiliebox li
+{
+	float:left;
+	height:20px;
+	margin:2px;
+	overflow:hidden;
+	position:relative;
+	text-align:center;
+	width:20px;
+}
+
+.editor_smiliebox ul.smiliebox li div.table
+{
+	display:table;
+	height:100%;
+	margin:auto;
+	table-layout:fixed;
+	width:20px;
+}
+
+.editor_smiliebox ul.smiliebox li div.tablecell
+{
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.editor_smiliebox ul.smiliebox li img
+{
+	cursor:pointer;
+	height:auto;
+	max-width:20px;
+	width:auto!important;
+}
+
+.editor_smiliebox div.moresmilies
+{
+	font-size:12px;
+	text-align:center;
+}
+
+.editor_textbox_container
+{
+	float:left;
+	margin:0;
+	width:100%;
+}
+
+.editor_textbox_container.smilie
+{
+	margin-right:-165px;
+}
+
+.editor_textbox_smilie
+{
+	margin-right:85px;
+}
+
+.cke_skin_kama_container
+{
+	background:#FFF;
+	visibility:visible;
+}
+
+.cke_skin_kama_container body
+{
+	min-width:0;
+}
+
+.attachment a
+{
+	border:1px solid #fff;
+	display:block;
+	padding:1px 0;
+}
+
+.attachment a:hover
+{
+	background-color:#dff1ff;
+	border-color:#316ac5;
+	padding:1px 0;
+}
+
+.editorpopupbody
+{
+	max-height:250px;
+	min-width:200px;
+	overflow-x:hidden;
+	overflow-y:auto;
+	padding:5px;
+}
+
+.editorpopupbody li.attachment
+{
+	white-space:nowrap;
+}
+
+.editorpopupbody div.attach_insert_all
+{
+	background-color:#FFF;
+	cursor:pointer;
+	padding:2px;
+}
+
+.cke_skin_kama .cke_panel.cke_attach
+{
+	height:auto;
+	width:250px;
+}
+
+.cke_skin_kama span.cke_browser_webkit,.cke_skin_kama span.cke_browser_gecko18
+{
+	outline:none!important;
+}
+
+.previewthumbactive
+{
+	background:url(http://www.codingforums.com/images/styles/Modern/misc/pencil.png) no-repeat top left;
+	border:1px solid red;
+	cursor:pointer;
+	margin:0;
+	position:absolute;
+	z-index:10;
+}
+
+img.previewthumb.active
+{
+	border:1px solid red;
+	cursor:pointer;
+	margin:0;
+}
+
+.cke_browser_ie8 .cke_editor
+{
+	display:block!important;
+}
+
+.cke_button .cke_disabled:hover
+{
+	background-color:transparent!important;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button .cke_icon
+{
+	background:url(http://www.codingforums.com/images/styles/Modern/editor/sprite.png) no-repeat top left;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button .cke_icon
+{
+	height:16px;
+	overflow:hidden;
+	position:relative;
+	width:16px;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button .cke_icon_image
+{
+	background:url(http://www.codingforums.com/images/styles/Modern/editor/sprite.png) no-repeat top left;
+	height:60px;
+	position:absolute;
+	width:2498px;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button .cke_icon_image.custom
+{
+	background:none;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button a.cke_disabled .cke_icon
+{
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale');
+}
+
+.cke_skin_kama .cke_browser_ie .cke_rtl .cke_button a.cke_disabled .cke_icon
+{
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale');
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button a.cke_on .cke_icon_image
+{
+	top:0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button a.cke_off .cke_icon_image
+{
+	top:-20px;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button a.cke_disabled .cke_icon_image
+{
+	top:-40px;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button .cke_buttonarrow
+{
+	position:relative;
+	top:-4px;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_rtl .cke_button a.cke_disabled .cke_icon_image
+{
+	top:-40px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_openAttachmentWindow .cke_icon
+{
+	background-position:0 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_openAttachmentWindow .cke_icon_image
+{
+	left:0;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_enhancedsource .cke_icon
+{
+	background-position:-1597px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_enhancedsource .cke_icon_image
+{
+	left:-1597px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_pastetext .cke_icon
+{
+	background-position:-2480px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_pastetext .cke_icon_image
+{
+	left:-2480px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_pastefromword .cke_icon
+{
+	background-position:-2430px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_pastefromword .cke_icon_image
+{
+	left:-2430px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_removeFormat .cke_icon
+{
+	background-position:-1447px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_removeFormat .cke_icon_image
+{
+	left:-1447px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_bold .cke_icon
+{
+	background-position:-50px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_bold .cke_icon_image
+{
+	left:-50px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_italic .cke_icon
+{
+	background-position:-897px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_italic .cke_icon_image
+{
+	left:-897px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_underline .cke_icon
+{
+	background-position:-2247px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_underline .cke_icon_image
+{
+	left:-2247px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_subscript .cke_icon
+{
+	background-position:-2147px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_subscript .cke_icon_image
+{
+	left:-2147px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_superscript .cke_icon
+{
+	background-position:-2197px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_superscript .cke_icon_image
+{
+	left:-2197px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_table .cke_icon
+{
+	background-position:-2047px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_table .cke_icon_image
+{
+	left:-2047px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_vbTableProperties .cke_icon
+{
+	background-position:-1797px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_vbTableProperties .cke_icon_image
+{
+	left:-1797px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_tableDelete .cke_icon
+{
+	background-position:-1847px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_tableDelete .cke_icon_image
+{
+	left:-1847px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_vbRowInsertBefore .cke_icon
+{
+	background-position:-1997px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_vbRowInsertBefore .cke_icon_image
+{
+	left:-1997px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_vbRowInsertAfter .cke_icon
+{
+	background-position:-1947px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_vbRowInsertAfter .cke_icon_image
+{
+	left:-1947px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_vbRowDelete .cke_icon
+{
+	background-position:-1897px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_vbRowDelete .cke_icon_image
+{
+	left:-1897px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_vbColumnInsertBefore .cke_icon
+{
+	background-position:-1747px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_vbColumnInsertBefore .cke_icon_image
+{
+	left:-1747px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_vbColumnInsertAfter .cke_icon
+{
+	background-position:-1697px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_vbColumnInsertAfter .cke_icon_image
+{
+	left:-1697px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_vbColumnDelete .cke_icon
+{
+	background-position:-1647px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_vbColumnDelete .cke_icon_image
+{
+	left:-1647px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_horizontalrule .cke_icon
+{
+	background-position:-2097px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_horizontalrule .cke_icon_image
+{
+	left:-2097px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_smiley .cke_icon
+{
+	background-position:-1497px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_smiley .cke_icon_image
+{
+	left:-1497px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_iespell .cke_icon
+{
+	background-position:-1547px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_iespell .cke_icon_image
+{
+	left:-1547px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_link .cke_icon
+{
+	background-position:-300px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_link .cke_icon_image
+{
+	left:-300px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_Email .cke_icon
+{
+	background-position:-401px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_Email .cke_icon_image
+{
+	left:-401px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_unlink .cke_icon
+{
+	background-position:-2346px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_unlink .cke_icon_image
+{
+	left:-2346px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_image .cke_icon,.cke_skin_kama span:not(.cke_browser_ie) .cke_button_vbimage .cke_icon
+{
+	background-position:-747px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_image .cke_icon_image,.cke_skin_kama .cke_browser_ie .cke_button_vbimage .cke_icon_image
+{
+	left:-747px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_videotag .cke_icon
+{
+	background-position:-2397px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_videotag .cke_icon_image
+{
+	left:-2397px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_Quote .cke_icon
+{
+	background-position:-1347px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_Quote .cke_icon_image
+{
+	left:-1347px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_Code .cke_icon
+{
+	background-position:-151px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_Code .cke_icon_image
+{
+	left:-151px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_Html .cke_icon
+{
+	background-position:-451px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_Html .cke_icon_image
+{
+	left:-451px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_Php .cke_icon
+{
+	background-position:-1297px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_Php .cke_icon_image
+{
+	left:-1297px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_PageBreak .cke_icon
+{
+	background-position:-1147px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_PageBreak .cke_icon_image
+{
+	left:-1147px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_PreviewBreak .cke_icon
+{
+	background-position:-100px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_PreviewBreak .cke_icon_image
+{
+	left:-100px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_textcolor .cke_icon
+{
+	background-position:-201px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_textcolor .cke_icon_image
+{
+	left:-201px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_undo .cke_icon
+{
+	background-position:-2297px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_undo .cke_icon_image
+{
+	left:-2297px;
+}
+
+.cke_skin_kama .cke_rtl span:not(.cke_browser_ie) .cke_button_undo .cke_icon
+{
+	background-position:-1397px 0;
+}
+
+.cke_skin_kama .cke_rtl .cke_browser_ie .cke_button_undo .cke_icon_image
+{
+	left:-1397px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_redo .cke_icon
+{
+	background-position:-1397px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_redo .cke_icon_image
+{
+	left:-1397px;
+}
+
+.cke_skin_kama .cke_rtl span:not(.cke_browser_ie) .cke_button_redo .cke_icon
+{
+	background-position:-2297px 0;
+}
+
+.cke_skin_kama .cke_rtl .cke_browser_ie .cke_button_redo .cke_icon_image
+{
+	left:-2297px;
+}
+
+.cke_skin_kama .cke_rtl .cke_rcombo
+{
+	float:right;
+}
+
+.cke_skin_kama .cke_browser_ie6 .cke_rtl .cke_rcombo,.cke_skin_kama .cke_browser_ie7 .cke_rtl .cke_rcombo
+{
+	float:none;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_numberedlist .cke_icon
+{
+	background-position:-797px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_numberedlist .cke_icon_image
+{
+	left:-797px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_bulletedlist .cke_icon
+{
+	background-position:-847px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_bulletedlist .cke_icon_image
+{
+	left:-847px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_outdent .cke_icon
+{
+	background-position:-1097px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_outdent .cke_icon_image
+{
+	left:-1097px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_indent .cke_icon
+{
+	background-position:-697px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_indent .cke_icon_image
+{
+	left:-697px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_justifyleft .cke_icon
+{
+	background-position:-997px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_justifyleft .cke_icon_image
+{
+	left:-997px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_justifycenter .cke_icon
+{
+	background-position:-947px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_justifycenter .cke_icon_image
+{
+	left:-947px;
+}
+
+.cke_skin_kama span:not(.cke_browser_ie) .cke_button_justifyright .cke_icon
+{
+	background-position:-1047px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_button_justifyright .cke_icon_image
+{
+	left:-1047px;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_rtl .cke_button_undo .cke_icon_image
+{
+	left:-1397px;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_rtl .cke_button_redo .cke_icon_image
+{
+	left:-2297px;
+}
+
+.cke_skin_kama .cke_rtl span:not(.cke_browser_ie) .cke_button_outdent .cke_icon
+{
+	background-position:-697px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_rtl .cke_button_outdent .cke_icon_image
+{
+	left:-697px;
+}
+
+.cke_skin_kama .cke_rtl span:not(.cke_browser_ie) .cke_button_indent .cke_icon
+{
+	background-position:-1097px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_rtl .cke_button_indent .cke_icon_image
+{
+	left:-1097px;
+}
+
+.cke_skin_kama .cke_rtl span:not(.cke_browser_ie) .cke_button_columnInsertBefore .cke_icon
+{
+	background-position:-1697px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_rtl .cke_button_columnInsertBefore .cke_icon_image
+{
+	left:-1697px;
+}
+
+.cke_skin_kama .cke_rtl span:not(.cke_browser_ie) .cke_button_columnInsertAfter .cke_icon
+{
+	background-position:-1747px 0;
+}
+
+.cke_skin_kama .cke_browser_ie .cke_rtl .cke_button_columnInsertAfter .cke_icon_image
+{
+	left:-1747px;
+}
+
+.cke_skin_kama .cke_dialog .cke_dialog_ui_labeled_label
+{
+	float:none;
+}
+
+.cke_skin_kama .cke_dialog input[type=file]
+{
+	border:1px inset;
+}
+
+.cke_skin_kama div.cke_bottom_restore_autosave
+{
+	position:relative;
+}
+
+.cke_skin_kama div.cke_bottom_restore_autosave .cke_toolgroup
+{
+	height:18px;
+	padding:0 3px 0 0;
+	position:absolute;
+	top:4px;
+}
+
+.cke_skin_kama div.cke_bottom_restore_autosave a.restoretext
+{
+	background-image:none;
+	cursor:pointer;
+	height:12px;
+}
+
+.cke_skin_kama div.as_ind_container
+{
+	position:relative;
+}
+
+.cke_skin_kama div.as_ind_container div
+{
+	background-color:#ff0;
+	font-weight:700;
+	padding:2px;
+	position:absolute;
+	right:0;
+	top:-12px;
+}
+
+.cke_skin_kama .cke_toolbox
+{
+	margin-bottom:5px;
+}
+
+.cke_skin_kama .cke_dialog .cke_dialog_ui_textarea.cke_pastetext
+{
+	height:auto;
+	width:auto;
+}
+
+.cke_dialog_tab:focus
+{
+	outline:none;
+}
+
+.cke_skin_kama .cke_fontSize span.cke_text
+{
+	_width:25px;
+	max-width:60px;
+	min-width:25px;
+	width:auto;
+}
+
+.cke_skin_kama .cke_editor .cke_rcombo a,.cke_skin_kama .cke_editor .cke_toolgroup
+{
+	background:url(http://www.codingforums.com/clientscript/ckeditor/skins/kama/images/sprites.png) repeat-x 0 -500px;
+}
+
+.cke_skin_kama .cke_editor .cke_rcombo a:hover,.cke_skin_kama .cke_editor .cke_rcombo a:focus,.cke_skin_kama .cke_editor .cke_rcombo a:active,.cke_skin_kama .cke_editor .cke_button a:hover,.cke_skin_kama .cke_editor .cke_button a:focus,.cke_skin_kama .cke_editor .cke_button a:active
+{
+	background-color:#DFF1FF;
+}
+
+.cke_skin_kama .cke_editor .cke_button a.cke_on
+{
+	background-color:#A3D7FF;
+}
+
+.cke_skin_kama .cke_editor .cke_button a.cke_on:hover,.cke_skin_kama .cke_editor .cke_button a.cke_on:focus,.cke_skin_kama .cke_editor .cke_button a.cke_on:active
+{
+	background-color:#86CAFF;
+}
+
+.cke_skin_kama .cke_editor .cke_button a.cke_disabled *
+{
+	opacity:.3;
+}
+
+.cke_skin_kama .cke_editor .cke_button a,.cke_skin_kama .cke_editor .cke_button a.cke_off
+{
+	opacity:.7;
+}
+
+.cke_skin_kama .cke_wrapper.cke_ltr,.cke_skin_kama .cke_wrapper.cke_rtl
+{
+	background:#D3D3D3 url(http://www.codingforums.com/clientscript/ckeditor/skins/kama/images/sprites.png) repeat-x 0 -1950px;
+}
+
+.cke_skin_kama .cke_dialog_body .cke_dialog_contents
+{
+	background:#FFF none;
+}
+
+.cke_skin_kama .cke_dialog_contents .cke_dialog_contents
+{
+	background-color:#E4E4E4;
+	border-left:#FFF 1px solid;
+	border-right:#FFF 1px solid;
+	border-top:#FFF 1px solid;
+}
+
+.cke_skin_kama .cke_dialog_title
+{
+	color:#000;
+}
+
+.cke_skin_kama .cke_dialog_body .cke_dialog_tabs a.cke_dialog_tab
+{
+	background-color:#FFF;
+	color:#000;
+}
+
+.cke_skin_kama .cke_dialog_body .cke_dialog_tabs a.cke_dialog_tab_selected
+{
+	background-color:#E4E4E4;
+	color:#000;
+}
+
+.cke_skin_kama .cke_dialog_body .cke_dialog_tabs a.cke_dialog_tab:hover
+{
+	background-color:#E1E1E1;
+	color:#000;
+}
+
+.cke_skin_kama .cke_dialog_contents .cke_dialog_footer
+{
+	background-color:#E4E4E4;
+	border-left:#FFF 1px solid;
+	border-right:#FFF 1px solid;
+	border-top:#FFF 1px solid;
+}
+
+.cke_skin_kama .cke_dialog .cke_dialog_body
+{
+	background:#FFF none;
+}
+
+.cke_skin_kama .cke_dialog_body .cke_dialog_title
+{
+	border-bottom:#E4E4E4 1px solid;
+}
+
+.cke_skin_kama .cke_dialog_contents *,.cke_skin_kama .cke_dialog_contents a:hover,.cke_skin_kama .cke_dialog_contents a:link,.cke_skin_kama .cke_dialog_contents a:visited,.cke_skin_kama .cke_dialog_contents a:active
+{
+	color:#000;
+}
+
+.cke_skin_kama .cke_dialog .cke_dialog_body a.cke_dialog_close_button
+{
+	background-image:none;
+	top:10px;
+}
+
+.cke_skin_kama .cke_dialog_body .cke_dialog_close_button span
+{
+	border:1px solid #000;
+	color:#000;
+	cursor:pointer;
+	display:inline-block;
+	font-size:10px;
+	font-weight:700;
+	padding:0 2px;
+	vertical-align:bottom;
+}
+
+.cke_skin_kama .cke_dialog_body .cke_dialog_close_button span:hover
+{
+	background-color:#E4E4E4;
+	color:#FFF;
+}
+
+.cke_skin_kama .cke_dialog .cke_dialog_body .cke_dark_background
+{
+	background-color:#E4E4E4;
+}
+
+.cke_skin_kama .cke_dialog_body a.cke_smile img,.cke_skin_kama .cke_dialog_body a.cke_smile:focus img,.cke_skin_kama .cke_dialog_body a.cke_smile:active img,.cke_skin_kama .cke_dialog_body a.cke_smile:hover img
+{
+	border:0;
+	padding:2px;
+}
+
+.cke_skin_kama .cke_dialog .cke_dialog_body .cke_dialog_ui_input_text,.cke_skin_kama .cke_dialog .cke_dialog_body .cke_dialog_ui_input_select,.cke_skin_kama .cke_dialog .cke_dialog_body .cke_dialog_ui_input_textarea
+{
+	color:#000;
+}
+
+.cke_skin_kama .cke_dialog div.cke_disabled .cke_dialog_ui_labeled_content *
+{
+	background-color:#CCC;
+}
+
+.cke_skin_kama .cke_dialog .smiley_page
+{
+	overflow:auto;
+}
+
+.cke_skin_kama .cke_dialog .smiley_category
+{
+	padding:5px;
+}
+
+.popupmenu
+{
+	position:relative;
+	z-index:999;
+}
+
+.popupmenu a.popupctrl
+{
+	_padding-right:25px;
+	background-image:url(http://www.codingforums.com/images/styles/Modern/misc/black_downward_arrow.png);
+	background-position:right center;
+	background-repeat:no-repeat;
+	padding-right:15px;
+}
+
+.popupmenu a.popupctrl.nogadget
+{
+	background-image:none;
+	padding-right:0;
+}
+
+.popupgroup .popupmenu a.popupctrl
+{
+	background-color:transparent;
+	border:0;
+	font-size:12px;
+	margin-left:5px;
+	padding:2px 15px 2px 4px;
+	text-decoration:none;
+}
+
+.popupgroup .popupmenu:hover a.popupctrl
+{
+	background-color:transparent;
+	border:0;
+}
+
+.popupgroup .popupmenu
+{
+	float:left;
+}
+
+.blockfoot .popupctrl
+{
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	border-radius:0;
+	padding:2px 15px 2px 6px;
+	text-decoration:none;
+}
+
+.blockhead .popupctrl
+{
+	color:#fff;
+}
+
+.blockhead .popupctrl:hover
+{
+	color:#fff;
+}
+
+.popupbody
+{
+	background:#E1E1E1 none;
+	border:1px solid #c2d2df;
+	color:#3E3E3E;
+	display:none;
+	font:normal 11px Tahoma,Calibri,Verdana,Geneva,sans-serif;
+	left:0;
+	min-width:200px;
+	padding:2px;
+	position:absolute;
+	top:1.5em;
+	z-index:1000;
+}
+
+.popupmenu:hover ul.popuphover
+{
+	display:block;
+}
+
+.popupbody li
+{
+	border-top:solid 1px #E1E1E1;
+}
+
+.popupbody > li:first-child
+{
+	border-top:none;
+}
+
+.popupbody li a,.popupbody li label
+{
+	background:#FFF none;
+	color:#3E3E3E;
+	display:block;
+	padding:6.235px 10px;
+	text-align:left;
+	text-decoration:none;
+	white-space:nowrap;
+}
+
+.popupbody li > a:hover,.popupbody li > label:hover
+{
+	background:#FFEB90 none;
+	color:#3E3E3E;
+}
+
+.memberaction_body.popupbody li a:hover
+{
+	background-color:#FFEB90;
+	color:#3E3E3E;
+}
+
+.popupbody li.vbmenu_hilite a
+{
+	background:#FFEB90 none;
+	color:#3E3E3E;
+}
+
+.popupbody li.vbmenu_option > a:hover
+{
+	background:#FFEB90 none;
+	color:#3E3E3E;
+}
+
+.popupbody li.vbmenu_hilite,li.vbmenu_option
+{
+	display:list-item;
+	float:none;
+	width:100%;
+}
+
+.popupbody li input.searchbox
+{
+	color:#777;
+	font-size:13px;
+	font-style:italic;
+	padding:0;
+	width:180px;
+}
+
+.popupbody li input.searchbox:focus
+{
+	color:#5d5d5d;
+	font-style:normal;
+}
+
+.popupbody li.formsubmit
+{
+	background:#E1E1E1 none;
+	padding:0;
+	text-align:right;
+}
+
+.popupbody li.formsubmit .submitoptions
+{
+	float:left;
+	text-align:left;
+}
+
+.popupbody li.formsubmit .submitoptions label
+{
+	display:block;
+}
+
+.popupbody li.formsubmit.jumptopage > label
+{
+	background:none;
+	display:inline;
+}
+
+.popupbody li.formsubmit input[type=submit],.popupbody li.formsubmit input[type=reset],.popupbody li.formsubmit input[type=button]
+{
+	font:12px Tahoma,Calibri,Verdana,Geneva,sans-serif;
+	padding:2px 2px 1px;
+}
+
+.popupbody li.formsubmit input[type=submit]:hover,.popupbody li.formsubmit input[type=reset]:hover,.popupbody li.formsubmit input[type=button]:hover
+{
+	color:#76a11b;
+}
+
+.blockhead .popupmenu,.blocksubhead .popupmenu
+{
+	clear:left;
+	display:block;
+	float:right;
+	text-transform:none;
+}
+
+.memberaction.popupmenu
+{
+	display:inline-block;
+	position:relative;
+	top:0;
+}
+
+.postdetails .memberaction.popupmenu
+{
+	position:static;
+}
+
+.memberaction.popupmenu a.popupctrl
+{
+	background:none;
+	padding:0;
+}
+
+.memberaction_body.popupbody
+{
+	-moz-border-radius:5px;
+	-moz-box-shadow:0 4px 7px none;
+	-webkit-border-radius:5px;
+	-webkit-box-shadow:0 4px 7px none;
+	background:#FFF;
+	border-radius:5px;
+	box-shadow:0 4px 7px none;
+	width:280px;
+}
+
+.memberaction_body.popupbody li
+{
+	border:none;
+	width:140px;
+}
+
+.memberaction_body.popupbody li.left
+{
+	clear:left;
+	float:left;
+}
+
+.memberaction_body.popupbody li.right
+{
+	clear:right;
+	float:right;
+}
+
+.memberaction_body.popupbody li .siteicon_profile
+{
+	background:url(http://www.codingforums.com/images/styles/Modern/site_icons/profile.png) left 2px no-repeat;
+}
+
+.memberaction_body.popupbody li .siteicon_forum
+{
+	background:url(http://www.codingforums.com/images/styles/Modern/site_icons/forum.png) left 2px no-repeat;
+}
+
+.memberaction_body.popupbody li .siteicon_message
+{
+	background:url(http://www.codingforums.com/images/styles/Modern/site_icons/message.png) left 2px no-repeat;
+}
+
+.memberaction_body.popupbody li .siteicon_blog
+{
+	background:url(http://www.codingforums.com/images/styles/Modern/site_icons/blog.png) left 2px no-repeat;
+}
+
+.memberaction_body.popupbody li .siteicon_homepage
+{
+	background:url(http://www.codingforums.com/images/styles/Modern/site_icons/homepage.png) left 2px no-repeat;
+}
+
+.memberaction_body.popupbody li .siteicon_article
+{
+	background:url(http://www.codingforums.com/images/styles/Modern/site_icons/article.png) left 2px no-repeat;
+}
+
+.memberaction_body.popupbody li .siteicon_add
+{
+	background:url(http://www.codingforums.com/images/styles/Modern/site_icons/add.png) left 2px no-repeat;
+}
+
+.memberaction_body.popupbody li .siteicon_email
+{
+	background:url(http://www.codingforums.com/images/styles/Modern/site_icons/email.png) left 2px no-repeat;
+}
+
+.memberaction_body.popupbody li > a
+{
+	padding:4px 4px 4px 20px;
+}
+
+.memberaction_body.popupbody hr
+{
+	display:inline;
+	float:left;
+	height:96px;
+	width:0;
+}
+
+.popupbody li.formsubmit .submitoptions label,.popupbody li.formsubmit .advancedsearchlink a
+{
+	background:transparent;
+	color:#3E3E3E;
+}
+
+html
+{
+	/*background:#efefef url(http://www.codingforums.com/images/styles/Modern/style/pageBG_green.gif) repeat-x left top;*/
+	color:#000;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td
+{
+	margin:0;
+	padding:0;
+}
+
+table
+{
+	border-collapse:collapse;
+	border-spacing:0;
+	font:100%;
+	font-size:inherit;
+}
+
+fieldset,img
+{
+	border:0;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var,optgroup
+{
+	font-style:inherit;
+	font-weight:inherit;
+}
+
+del,ins
+{
+	text-decoration:none;
+}
+
+li
+{
+	list-style:none;
+}
+
+caption,th
+{
+	text-align:left;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	font-size:100%;
+	font-weight:400;
+}
+
+q:before,q:after
+{
+	content:'';
+}
+
+abbr,acronym
+{
+	border:0;
+	font-variant:normal;
+}
+
+sup
+{
+	vertical-align:baseline;
+}
+
+sub
+{
+	vertical-align:baseline;
+}
+
+legend
+{
+	color:#000;
+}
+
+input,button,textarea,select,optgroup,option
+{
+	font-family:inherit;
+	font-size:inherit;
+	font-style:inherit;
+	font-weight:inherit;
+}
+
+input,button,textarea,select
+{
+	font-size:100%;
+}
+
+body
+{
+	color:#5d5d5d;
+	font:x-small;
+	font-size:12px;
+	line-height:1.230;
+	margin:0 50px;
+	max-width:auto;
+	min-width:900px;
+	width:auto;
+}
+
+select,input,button,textarea,button
+{
+	font:99% arial,helvetica,clean,sans-serif;
+}
+
+pre,code,kbd,samp,tt
+{
+	font-family:monospace;
+	font-size:108%;
+	line-height:100%;
+}
+
+a:active,a:focus
+{
+	outline:0;
+}
+
+body a
+{
+	color:#278605;
+	text-decoration:none;
+}
+
+body a:hover,body a:hover .time,body a:hover .shade,body a:hover .understate
+{
+	color:#666;
+	text-decoration:none;
+}
+
+body a.understate,body a .understate
+{
+	clear:expression(style.color=parentNode.currentStyle.color,style.clear="none",0);
+	color:inherit;
+	text-decoration:none;
+}
+
+.body_wrapper
+{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	background:#fff none;
+	border-radius:5px;
+	padding:10px 20px;
+}
+
+input,textarea,button,select
+{
+	font-family:Tahoma,Calibri,Verdana,Geneva,sans-serif;
+}
+
+.button
+{
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	background:#e9e9e9 url(http://www.codingforums.com/images/gradients/generic_button.png) repeat-x top left;
+	border:1px solid #a8a8a8;
+	border-radius:0;
+	color:#424242;
+	font:bold 11px Tahoma,Calibri,Verdana,Geneva,sans-serif;
+	padding:2px;
+}
+
+.button:hover
+{
+	background:#efefef url(http://www.codingforums.com/images/gradients/generic_button.png) repeat-x;
+	color:#76a11b;
+}
+
+body,legend
+{
+	font-family:arial,helvetica,sans-serif;
+}
+
+.shade
+{
+	color:#777;
+}
+
+.time
+{
+	color:#3e3e3e;
+}
+
+.nocss_label
+{
+	display:none;
+}
+
+.normal
+{
+	font-size:12px;
+	font-weight:400;
+}
+
+.block
+{
+	clear:both;
+}
+
+.blockhead
+{
+	-moz-border-radius-topleft:5px;
+	-moz-border-radius-topright:5px;
+	-webkit-border-top-left-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	_background-image:none;
+	background:#181818 url(http://www.codingforums.com/images/buttons/newbtn_middle.png) repeat-x;
+	border:1px solid #070707;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	color:#fff;
+	font:normal 12px arial,helvetica,sans-serif;
+	padding:4px 10px;
+}
+
+.blockhead h2
+{
+	font-weight:700;
+}
+
+.blockhead a
+{
+	color:#fff;
+}
+
+.blockhead a:hover
+{
+	color:#fff;
+}
+
+.blockhead img
+{
+	margin-bottom:-4px;
+}
+
+.blocksubhead
+{
+	background:#e9e9e9 none repeat-x;
+	border-top:0;
+	color:#3e3e3e;
+	font:normal 12px;
+	padding:4px 10px;
+}
+
+.blocksubhead img
+{
+	vertical-align:middle;
+}
+
+.blocksubhead a
+{
+	color:#417394;
+	text-decoration:none;
+}
+
+.blocksubhead a:hover
+{
+	color:#278605;
+}
+
+.blockhead_info,.blocksubhead_info
+{
+	float:right;
+	font-weight:400;
+}
+
+.blockbody
+{
+	background:#fff none no-repeat;
+	padding-left:0;
+	padding-right:0;
+}
+
+.blockrow
+{
+	background:none none;
+	padding:5px 10px;
+}
+
+.blockfoot,.blocksubfoot
+{
+	background:#fff none;
+	border:0 #6c0;
+	clear:both;
+	display:block;
+	padding:5px 0;
+}
+
+.blockfootpad
+{
+	clear:both;
+	padding:5px 0;
+}
+
+.blocksubfoot
+{
+	text-align:right;
+}
+
+.wysiwyg_block
+{
+	margin-bottom:10px;
+}
+
+.wysiwyg_block .formcontrols .blockrow
+{
+	border-top:0;
+}
+
+.table
+{
+	display:table;
+	table-layout:fixed;
+}
+
+.thead
+{
+	display:table-row;
+	padding:0;
+	width:100%;
+}
+
+.tr
+{
+	display:table-row;
+}
+
+.td
+{
+	display:table-cell;
+}
+
+.pagination span
+{
+	clear:right;
+	display:block;
+	float:left;
+}
+
+.pagination span a
+{
+	background:#f3f3f3 none;
+	border:1px solid #d3d3d3;
+	color:#414141;
+	font:normal 13px Tahoma,Calibri,Verdana,Geneva,sans-serif;
+	height:15.99px;
+	margin-left:1px;
+	padding:2px 4px;
+	text-decoration:none;
+}
+
+.pagination span a:hover
+{
+	border:1px solid #417394;
+}
+
+.pagination span.prev_next a,.pagination span.first_last a
+{
+	position:relative;
+	top:-2px;
+}
+
+.pagination span.prev_next a img,.pagination span.first_last a img
+{
+	display:inline;
+	position:relative;
+	top:3px;
+}
+
+.pagination dt.label
+{
+	display:none;
+}
+
+.pagination span.selected a
+{
+	background:#dbd8d0 url(http://www.codingforums.com/images/buttons/newbtn_middle.png) repeat-x;
+	border:1px solid #c5c1b6;
+	color:#79756d;
+	font-weight:700;
+	height:15.99px;
+	margin-left:1px;
+	padding:2px 4px;
+}
+
+.pagination .separator,.pagination .elipsis
+{
+	background:none;
+	border:0;
+}
+
+.pagination .separator:hover
+{
+	border:0;
+}
+
+.pagination li.jumptopage
+{
+	text-align:center;
+}
+
+.pagination span a.popupctrl
+{
+	background:#f3f3f3 url(http://www.codingforums.com/images/styles/Modern/misc/black_downward_arrow.png) no-repeat center left;
+	height:15.99px;
+	padding-left:18px;
+	padding-right:4px;
+}
+
+.pagination .popupmenu:hover a.popupctrl
+{
+	border:1px solid #417394;
+	color:#5d5d5d;
+}
+
+.cke_skin_kama .cke_dialog_contents a.cke_dialog_ui_button_ok,.cke_skin_kama .cke_dialog_contents a.cke_dialog_ui_button_cancel,.textcontrols a,a.textcontrol
+{
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	background:#e9e9e9 url(http://www.codingforums.com/images/gradients/generic_button.png) repeat-x top left;
+	border:1px solid #a8a8a8;
+	border-radius:0;
+	color:#424242;
+	font:bold 11px Tahoma,Calibri,Verdana,Geneva,sans-serif;
+	line-height:1.230;
+	padding:3px 5px;
+	position:relative;
+	text-decoration:none;
+}
+
+.cke_skin_kama .cke_dialog_footer_buttons span.cke_dialog_ui_button
+{
+	color:#424242;
+	font:bold 11px Tahoma,Calibri,Verdana,Geneva,sans-serif;
+}
+
+.textcontrols a img,a.textcontrol img
+{
+	bottom:2px;
+	left:-2px;
+	position:absolute;
+}
+
+.textcontrols a:hover img,a:hover.textcontrol img
+{
+	bottom:2px;
+	left:-2px;
+	position:absolute;
+}
+
+.textcontrols a:hover,a:hover.textcontrol
+{
+	background:#efefef url(http://www.codingforums.com/images/gradients/generic_button.png) repeat-x;
+	color:#76a11b;
+	text-decoration:none;
+}
+
+.blockhead a.textcontrol
+{
+	float:right;
+	font:bold 11px Tahoma,Calibri,Verdana,Geneva,sans-serif;
+	margin-top:-4.5px;
+	text-transform:none;
+}
+
+.blockhead a.textcontrol:hover
+{
+	color:#76a11b;
+}
+
+.navpopupmenu
+{
+	clear:left;
+	display:block;
+	float:right;
+	font-size:12px;
+	margin-left:10px;
+	margin-top:0;
+	padding:3px 0 0;
+	text-align:right;
+}
+
+* html .navpopupmenu.popupmenu.nohovermenu a.textcontrol,.navpopupmenu a.textcontrol,.navpopupmenu a.popupctrl,.navpopupmenu.popupmenu.nohovermenu a.textcontrol,.navpopupmenu.popupmenu.nohovermenu a.popupctrl
+{
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	_background-image:none;
+	background:#e9e9e9 url(http://www.codingforums.com/images/gradients/generic_button.png) repeat-x top left;
+	border:1px solid #a8a8a8;
+	border-radius:0;
+	color:#424242;
+	font:bold 11px Tahoma,Calibri,Verdana,Geneva,sans-serif;
+	padding:3.33333333333px 6.66666666667px;
+	text-decoration:none;
+}
+
+.navpopupmenu a.textcontrol:hover,.navpopupmenu a.popupctrl:hover,.navpopupmenu.popupmenu.nohovermenu a.textcontrol:hover,.navpopupmenu.popupmenu.nohovermenu a.popupctrl:hover
+{
+	_background-image:none;
+	background:#efefef url(http://www.codingforums.com/images/gradients/generic_button.png) repeat-x;
+	color:#76a11b;
+}
+
+.navpopupmenu .popupctrl .ctrlcontainer
+{
+	background:transparent url(http://www.codingforums.com/images/styles/Modern/misc/black_downward_arrow.png) no-repeat center left;
+	padding-left:15px;
+	white-space:nowrap;
+}
+
+.navpopupbody
+{
+	left:auto;
+	max-height:350px;
+	overflow:auto;
+	overflow-y:scroll;
+	right:0;
+	text-align:left;
+	width:auto;
+}
+
+.navpopupbody li
+{
+	min-width:200px;
+	overflow:hidden;
+}
+
+.navpopupbody li.optionlabel
+{
+	color:#3E3E3E;
+	font-weight:700;
+	text-align:center;
+}
+
+.navpopupbody .d1 a
+{
+	text-indent:20px;
+}
+
+.navpopupbody .d2 a
+{
+	text-indent:40px;
+}
+
+.navpopupbody .d3 a
+{
+	text-indent:60px;
+}
+
+.navpopupbody .d4 a
+{
+	text-indent:80px;
+}
+
+.navpopupbody .d5 a
+{
+	text-indent:100px;
+}
+
+.navpopupbody .d6 a
+{
+	text-indent:120px;
+}
+
+.navpopupbody .d7 a
+{
+	text-indent:140px;
+}
+
+.navpopupbody .d8 a
+{
+	text-indent:160px;
+}
+
+.navpopupbody .d9 a
+{
+	text-indent:180px;
+}
+
+.navpopupbody .d10 a
+{
+	text-indent:200px;
+}
+
+.navpopupbody .d11 a
+{
+	text-indent:220px;
+}
+
+.navpopupbody .d12 a
+{
+	text-indent:240px;
+}
+
+.navpopupbody .d13 a
+{
+	text-indent:260px;
+}
+
+.navpopupbody .d14 a
+{
+	text-indent:280px;
+}
+
+.navpopupbody .d15 a
+{
+	text-indent:300px;
+}
+
+.navpopupbody .d16 a
+{
+	text-indent:320px;
+}
+
+.navpopupbody .d17 a
+{
+	text-indent:340px;
+}
+
+.navpopupbody .d18 a
+{
+	text-indent:360px;
+}
+
+.navpopupbody .d19 a
+{
+	text-indent:380px;
+}
+
+.navpopupbody .d20 a
+{
+	text-indent:400px;
+}
+
+dl.stats.totals
+{
+	float:right;
+	padding:5px;
+}
+
+dl.stats dt
+{
+	color:#777;
+	display:inline;
+}
+
+dl.stats dt:after
+{
+	content:":";
+}
+
+dl.stats dd
+{
+	display:inline;
+}
+
+dl.statsblock dt
+{
+	clear:left;
+	display:block;
+	float:left;
+	width:25%;
+}
+
+dl.statsblock dd
+{
+	display:block;
+	float:left;
+	margin-left:10px;
+}
+
+dl.tabslight
+{
+	border-bottom:solid 0 #cdc9bf;
+	height:25px;
+	margin-bottom:1em;
+	margin-top:15px;
+	padding-left:20px;
+}
+
+dl.tabslight dt
+{
+	display:none;
+}
+
+dl.tabslight dd
+{
+	float:left;
+}
+
+dl.tabslight dd a
+{
+	-moz-border-radius-topleft:5px;
+	-moz-border-radius-topright:11px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-top-right-radius:11px;
+	background-color:#e9e9e9;
+	border:0;
+	border-top-left-radius:3px;
+	border-top-right-radius:11px;
+	color:#5d5d5d;
+	display:block;
+	font-size:12px;
+	font-weight:700;
+	height:25px;
+	line-height:25px;
+	margin-bottom:-0;
+	margin-left:-0;
+	min-width:55px;
+	padding:0 10px;
+	text-align:center;
+	text-decoration:none;
+}
+
+html>body dl.tabslight dd.selected a,html>body dl.tabslight dd.selected a:hover
+{
+	background:#e8e6e1 none;
+	border-bottom:0 transparent;
+	position:relative;
+}
+
+* dl.tabslight dd.selected a,* dl.tabslight dd.selected a:hover
+{
+	background:#e8e6e1 none;
+	border-bottom:0 transparent;
+}
+
+dl.tabslight dd a:hover
+{
+	background:#e8e6e1 none;
+	color:#666;
+}
+
+.columnsort a,.columnsort span
+{
+	display:block;
+	text-align:left;
+	text-decoration:none;
+	white-space:nowrap;
+}
+
+.columnsort a:hover
+{
+	background-color:#FFEB90;
+	color:inherit;
+	text-decoration:none;
+}
+
+tr.columnsort th
+{
+	white-space:nowrap;
+}
+
+div.collapse
+{
+	position:relative;
+}
+
+a.collapse
+{
+	float:right;
+	position:absolute;
+	right:10px;
+	top:20px;
+}
+
+.blockhead a.collapse
+{
+	top:10px;
+}
+
+#forumrules
+{
+	background:#fff none;
+	border-bottom:0;
+	border-left:0;
+	border-right:0;
+	border-top:1px solid #fff;
+	margin-bottom:10px;
+}
+
+#forumrules ul.youcandoblock
+{
+	float:left;
+	margin:0 10px 10px 0;
+	overflow:hidden;
+	width:55%;
+}
+
+#forumrules ul.bbcodeblock
+{
+	float:right;
+	overflow:hidden;
+	text-align:right;
+	width:42%;
+}
+
+#forumrules .rules_link
+{
+	margin-top:10px;
+	padding-left:55%;
+	width:42%;
+}
+
+.errorblock ul.blockrow.error > li
+{
+	border-bottom:solid 1px #e8e6e1;
+	margin-bottom:10px;
+	padding-bottom:10px;
+}
+
+.errorblock ul.blockrow.error li:last-child
+{
+	border-bottom:none;
+	margin-bottom:0;
+	padding-bottom:0;
+}
+
+blockquote.preview
+{
+	font:13px arial,helvetica,sans-serif;
+}
+
+blockquote.preview ul,blockquote.preview ol,blockquote.preview dl
+{
+	margin:0 40px;
+}
+
+blockquote.preview.forumcontent
+{
+	font:13px Verdana,Arial,Tahoma,Calibri,Geneva,sans-serif;
+}
+
+blockquote.preview .bbcode_container div.bbcode_code,blockquote.preview .bbcode_container pre.bbcode_code
+{
+	background:#f2f6f8 none repeat-x;
+	border:1px inset;
+	direction:ltr;
+	font-size:12px;
+	margin:0;
+	overflow:auto;
+	padding:6px;
+	text-align:left;
+}
+
+blockquote.preview .bbcode_container code.bbcode_code
+{
+	direction:ltr;
+	font-size:12px;
+	margin:0;
+	text-align:left;
+}
+
+blockquote.preview .bbcode_container code.bbcode_code code
+{
+	white-space:nowrap;
+}
+
+blockquote.preview fieldset.postattachlist
+{
+	background:#FFF none repeat-x center bottom;
+	border-top:solid 1px #e8e6e1;
+	padding-bottom:1em;
+}
+
+blockquote.preview .bbcode_container div.bbcode_quote
+{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	background:#f3f3f3 none;
+	border:1px solid #d3d3d3;
+	border-radius:5px;
+	font:italic normal 13px arial,helvetica,sans-serif;
+	margin:0 10px 10px;
+	position:relative;
+	top:0;
+}
+
+blockquote.preview .bbcode_container .bbcode_quote_container
+{
+	background:transparent url(http://www.codingforums.com/images/styles/Modern/misc/quote-left.png) no-repeat left;
+	display:block;
+	height:13px;
+	left:-9px;
+	position:absolute;
+	top:5px;
+	width:9px;
+}
+
+blockquote.preview .bbcode_quote div.quote_container
+{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border-top:1px solid #fff;
+	padding:5px 10px;
+}
+
+.attachments
+{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	background:#ececec none;
+	border:1px solid #d5d5d5;
+	border-radius:5px;
+	font-size:12px;
+	margin:20px 30px;
+	padding:5px 10px;
+}
+
+.attachments fieldset
+{
+	margin:5px 0;
+}
+
+.attachments img.inlineimg
+{
+	position:relative;
+	top:2px;
+}
+
+blockquote.preview .signature
+{
+	border-top:1px solid #ddd;
+	margin-top:1.5em;
+	padding-top:.5em;
+}
+
+.commalist li
+{
+	display:inline-block;
+}
+
+.standard_error
+{
+	margin:0 auto;
+	max-width:600px;
+	padding:4em 0 6em;
+}
+
+.hidden
+{
+	display:none!important;
+}
+
+.floatcontainer:after,.formcontrols .blockrow:after,dl.stats:after
+{
+	clear:both;
+	content:".";
+	display:block;
+	height:0;
+	visibility:hidden;
+}
+
+.floatcontainer,.formcontrols .blockrow,dl.stats
+{
+	display:block;
+	font-weight:400;
+}
+
+* html .floatcontainer,.formcontrols .blockrow,dl.stats
+{
+	height:1%;
+}
+
+.floatcontainer.hidden
+{
+	display:none;
+}
+
+#inlinemod_formctrls
+{
+	float:right;
+}
+
+#inlinemod_formctrls .popupctrl
+{
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	background:#e9e9e9 url(http://www.codingforums.com/images/gradients/generic_button.png) repeat-x top left;
+	border:1px solid #a8a8a8;
+	border-radius:0;
+	color:#424242;
+	float:left;
+	font:bold 11px Tahoma,Calibri,Verdana,Geneva,sans-serif;
+	padding-right:0;
+	position:inherit;
+	text-decoration:none;
+	top:-5px;
+}
+
+#inlinemod_formctrls a.popupctrl:hover
+{
+	background:#efefef url(http://www.codingforums.com/images/gradients/generic_button.png) repeat-x;
+	color:#76a11b;
+}
+
+#inlinemod_formctrls a.popupctrl span.ctrlcontainer
+{
+	background:transparent url(http://www.codingforums.com/images/styles/Modern/misc/black_downward_arrow.png) no-repeat center left;
+	display:inline-block;
+	float:left;
+	font-size:12px;
+	padding:3.33333333333px 5px 3.33333333333px 15px;
+}
+
+#inlinemod_formctrls .popupbody
+{
+	left:auto;
+	right:0;
+}
+
+div.forum_disabled
+{
+	background-color:#FFF;
+	color:red;
+	font-size:20px;
+	padding:10px;
+	text-align:center;
+}
+
+.restore body
+{
+	margin:10px;
+}
+
+.restore h1
+{
+	font-size:138.5%;
+}
+
+.restore h2
+{
+	font-size:123.1%;
+}
+
+.restore h3
+{
+	font-size:108%;
+}
+
+.restore h1,.restore h2,.restore h3
+{
+	margin:1em 0;
+}
+
+.restore h1,.restore h2,.restore h3,.restore h4,.restore h5,.restore h6,.restore strong,.restore dt
+{
+	font-weight:700;
+}
+
+.restore optgroup
+{
+	font-weight:400;
+}
+
+.restore abbr,.restore acronym
+{
+	border-bottom:1px dotted #000;
+	cursor:help;
+}
+
+.restore em
+{
+	font-style:italic;
+}
+
+.restore del
+{
+	text-decoration:line-through;
+}
+
+.restore blockquote,.restore ul,.restore ol,.restore dl
+{
+	margin:1em;
+}
+
+.restore ol,.restore ul,.restore dl
+{
+	margin-left:2em;
+}
+
+.restore ol > li,.restore ol.decimal > li
+{
+	list-style:decimal outside;
+}
+
+.restore ol.upper-roman > li
+{
+	list-style:upper-roman outside;
+}
+
+.restore ol.lower-roman > li
+{
+	list-style:lower-roman outside;
+}
+
+.restore ol.upper-alpha > li
+{
+	list-style:upper-alpha outside;
+}
+
+.restore ol.lower-alpha > li
+{
+	list-style:lower-alpha outside;
+}
+
+.restore ul > li
+{
+	list-style:disc outside;
+}
+
+.restore dl dd
+{
+	margin-left:1em;
+}
+
+.restore th,.restore td
+{
+	border:1px solid #000;
+	padding:.5em;
+}
+
+.restore th
+{
+	font-weight:700;
+	text-align:center;
+}
+
+.restore caption
+{
+	margin-bottom:.5em;
+	text-align:center;
+}
+
+.restore sup
+{
+	vertical-align:super;
+}
+
+.restore sub
+{
+	vertical-align:sub;
+}
+
+.restore p,.restore fieldset,.restore table,.restore pre
+{
+	margin-bottom:1em;
+}
+
+.restore button,.restore input[type=checkbox],.restore input[type=radio],.restore input[type=reset],.restore input[type=submit]
+{
+	padding:1px;
+}
+
+.restore li > p
+{
+	margin-bottom:0;
+}
+
+.unread
+{
+	font-weight:700;
+}
+
+li.tag
+{
+	display:inline;
+	margin-right:5px;
+}
+
+li.tag label.mine
+{
+	font-weight:700;
+}
+
+li.tag a
+{
+	text-decoration:none;
+}
+
+li.taglevel1
+{
+	font-size:9px;
+}
+
+li.taglevel2
+{
+	font-size:12px;
+}
+
+li.taglevel3
+{
+	font-size:15px;
+}
+
+li.taglevel4
+{
+	font-size:18px;
+}
+
+li.taglevel5
+{
+	font-size:21px;
+}
+
+li.tag.option
+{
+	padding:10px;
+}
+
+#thread_tags_list input#tag_add_input
+{
+	display:block;
+	margin-bottom:.5em;
+	margin-top:2px;
+	width:90%;
+}
+
+#thread_tags_list .description
+{
+	color:#777;
+}
+
+#thread_tags_list .actionbuttons
+{
+	margin-bottom:1em;
+	text-align:right;
+}
+
+#tag_edit_list
+{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+#tag_edit_list li
+{
+	clear:right;
+	display:block;
+	float:left;
+	margin-right:10px;
+	width:auto;
+}
+
+#tag_edit_list li.mine
+{
+	font-weight:700;
+}
+
+#social_bookmarks_list li
+{
+	display:block;
+	float:left;
+	padding-left:10px;
+}
+
+#imagereg
+{
+	margin-bottom:5px;
+	vertical-align:middle;
+}
+
+#wol_navpopup.navpopupmenu
+{
+	margin-bottom:6px;
+}
+
+.navlinks
+{
+	background:#f5f5f5 none;
+	border-top:1px solid #e7e7e7;
+	clear:both;
+	color:#5d5d5d;
+	font-size:12px;
+	margin-bottom:20px;
+	margin-top:20px;
+	padding:10px 0;
+	text-align:center;
+	width:100%;
+}
+
+.clear,.cleardiv
+{
+	clear:both;
+}
+
+#ajax_post_errors
+{
+	-moz-border-radius-topleft:5px;
+	-moz-border-radius-topright:5px;
+	-webkit-border-top-left-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	background-color:#FFF;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	padding:2px;
+	position:absolute;
+	width:420px;
+	z-index:500;
+}
+
+#ajax_post_errors .blockrow
+{
+	border-bottom:0;
+	border-left:0;
+	border-right:0;
+}
+
+#ajax_post_errors .blockfoot
+{
+	text-align:center;
+}
+
+#ajax_post_errors_message ol
+{
+	margin:1em 1em 1em 2em;
+}
+
+#ajax_post_errors_message ol.numeric li,#ajax_post_errors_message ol li
+{
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:decimal;
+}
+
+.highlight
+{
+	background:#FFEB90 none repeat-x;
+	color:#76a11b;
+}
+
+label#fb_pulishlabel
+{
+	font-size:12px;
+	font-weight:400;
+	margin-right:10px;
+	vertical-align:middle;
+}
+
+#fb_likeframe
+{
+	border:none;
+	height:27px;
+	overflow:hidden;
+	vertical-align:text-bottom;
+	width:260px;
+}
+
+#pagetitle #fb_likeframe
+{
+	float:right;
+}
+
+.blogbit #fb_likeframe
+{
+	margin-top:7px;
+}
+
+#recaptcha_area
+{
+	direction:ltr;
+	display:inline;
+}
+
+#recaptcha_widget_div
+{
+	float:left;
+}
+
+.member_blockrow .error
+{
+	padding:4px 10px;
+}
+
+div.cms_table
+{
+	overflow:auto;
+	overflow-y:hidden;
+	padding:1px;
+}
+
+table.cms_table_grid,table.wysiwyg_cms_table_grid
+{
+	border-collapse:collapse;
+	margin-bottom:0;
+}
+
+td.cms_table_grid_td,td.wysiwyg_cms_table_grid_td
+{
+	border:3px solid #999;
+}
+
+table.cms_table_outer_border,table.wysiwyg_cms_table_outer_border
+{
+	border:3px solid #999;
+	border-collapse:collapse;
+}
+
+td.cms_table_td,td.cms_table_outer_border_td
+{
+	border:none;
+}
+
+.content img
+{
+	max-width:100%;
+}
+
+.above_body
+{
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	background:#323232 url(http://www.codingforums.com/images/gradients/gradient-grey-down.png) repeat-x;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	margin:0 0 10px;
+	padding:0;
+}
+
+.doc_header
+{
+	color:#d6e99c;
+	font:normal normal normal 11px Arial,Tahoma,Calibri,Verdana,Geneva,sans-serif;
+	min-height:35px;
+	position:relative;
+}
+
+.doc_header hr
+{
+	display:none;
+}
+
+.logo-image
+{
+	clear:right;
+	float:left;
+	height:auto!important;
+	min-height:2em;
+	padding:0;
+}
+
+.toplinks
+{
+	background:none;
+	color:#fff;
+	font:normal normal normal 11px Arial,Tahoma,Calibri,Verdana,Geneva,sans-serif;
+	position:absolute;
+	right:20px;
+	text-align:right;
+	top:0;
+}
+
+.toplinks ul.isuser li#fb_headerbox.hidden,.toplinks ul.nouser li#fb_headerbox.hidden
+{
+	display:none;
+}
+
+.toplinks ul.isuser li#fb_headerbox a,.toplinks ul.nouser li#fb_headerbox a
+{
+	background:none;
+	cursor:pointer;
+	padding-top:0;
+}
+
+li#fb_headerbox a#fb_link
+{
+	position:relative;
+}
+
+li#fb_headerbox a#fb_link #fb_squarepic
+{
+	border:1px solid #B3CCE7;
+	padding:1px;
+	position:absolute;
+	right:-6px;
+	top:5px;
+	z-index:1;
+}
+
+li#fb_headerbox a#fb_link #fb_icon
+{
+	position:absolute;
+	right:10px;
+	top:1px;
+	z-index:2;
+}
+
+.toplinks ul.isuser,.toplinks ul.nouser
+{
+	clear:left;
+	display:block;
+	float:right;
+	list-style:none;
+}
+
+.toplinks ul.isuser li
+{
+	clear:left;
+	color:#d6e99c;
+	display:inline;
+	float:right;
+	padding-right:10px;
+	position:relative;
+}
+
+.toplinks ul.isuser .popupbody li
+{
+	clear:none;
+	display:block;
+	float:none;
+	margin:0;
+	padding:0;
+}
+
+.toplinks ul.isuser li.welcomelink
+{
+	clear:left;
+	color:#d6e99c;
+	display:block;
+	float:right;
+	padding:3px 4px;
+}
+
+.toplinks ul.isuser li.logoutlink
+{
+	top:0;
+}
+
+.toplinks ul.isuser li a
+{
+	color:#fff;
+	display:block;
+	font-weight:700;
+	padding:3px 4px;
+}
+
+.toplinks ul.isuser li li a
+{
+	float:none;
+	margin-left:0;
+}
+
+.toplinks ul.isuser li.welcomelink a
+{
+	clear:none;
+	display:inline;
+	float:none;
+	margin-left:0;
+}
+
+.toplinks ul.isuser li a:hover
+{
+	background:#81a925;
+	color:#d1e9c8;
+	padding:3px 4px;
+}
+
+.toplinks ul.nouser li
+{
+	display:inline;
+}
+
+.toplinks ul.nouser li a
+{
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	background:#81a925;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	clear:left;
+	color:#fff;
+	display:block;
+	float:right;
+	font-size:12px;
+	font-weight:700;
+	height:19px;
+	margin-right:10px;
+	padding:6px 10px 0;
+	position:relative;
+}
+
+.toplinks ul.nouser li a:hover
+{
+	background:#81a925;
+	color:#d1e9c8;
+}
+
+.toplinks ul.isuser li.popupmenu,.toplinks ul.isuser .notifications,.toplinks ul.isuser .nonotifications
+{
+	color:#000;
+	position:relative;
+}
+
+.toplinks ul.isuser li.popupmenu ul li
+{
+	margin:0;
+	position:relative;
+	text-align:left;
+	top:0;
+}
+
+.toplinks ul.isuser .notifications .popupbody
+{
+	background:#81a925;
+	border:1px solid #81a925;
+}
+
+.toplinks ul.isuser .notifications .popupbody li a
+{
+	background:#FFF none;
+	border-top:1px solid #81a925;
+	color:#000;
+	font-weight:400;
+	line-height:26px;
+	padding:0 5px 0 30px;
+	text-align:left;
+}
+
+.toplinks ul.isuser .notifications .popupbody li a span
+{
+	left:5px;
+	line-height:26px;
+	position:absolute;
+}
+
+.toplinks ul.isuser .notifications .popupbody li a:hover
+{
+	background:#d1e9c8 none;
+	color:#000;
+	text-decoration:underline;
+}
+
+.toplinks form
+{
+	clear:left;
+	display:block;
+	float:right;
+	margin-right:10px;
+	min-width:220px;
+	text-align:left;
+}
+
+.toplinks .logindetails
+{
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	background:#81a925;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	height:25px;
+	padding:0 10px;
+	text-align:center;
+}
+
+.toplinks form input
+{
+	border:0;
+	font-size:10px;
+	margin:3px 0 0;
+	padding:1px;
+	vertical-align:baseline;
+}
+
+.toplinks form input.textbox
+{
+	color:#000;
+}
+
+.toplinks form input.default-value
+{
+	color:#777;
+}
+
+.toplinks .remember
+{
+	color:#d6e99c;
+	font-size:9px;
+	margin:-3.33333333333px 0 0 20px;
+}
+
+.toplinks .remember input
+{
+	vertical-align:baseline;
+}
+
+.toplinks ul.isuser .notifications .popupbody li
+{
+	border-top:1px solid #81a925;
+}
+
+.cb_cookieuser_navbar
+{
+	position:relative;
+	top:2px;
+}
+
+.notifications a.popupctrl:link,.notifications a.popupctrl:visited,.toplinks a:link,.toplinks a:visited
+{
+	color:#fff;
+	text-decoration:none;
+}
+
+.notifications
+{
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	color:#fff;
+	font-size:12px;
+}
+
+.notifications a
+{
+	text-decoration:none;
+}
+
+.notifications .popupbody
+{
+	background:#FFF none;
+	color:#000;
+}
+
+.header hr,.header h2
+{
+	display:none;
+}
+
+.navbar
+{
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	background:#81a925 none;
+	border:0 solid #fff;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	color:#fff;
+	font:12px arial,helvetica,sans-serif;
+	height:84px;
+	margin:10px 0 0;
+	position:relative;
+}
+
+.navbar a
+{
+	color:#fff;
+}
+
+.navbar a:hover
+{
+	color:#daeda8;
+}
+
+.navtabs
+{
+	background:#81a925 url(http://www.codingforums.com/images/styles/Modern/style/navBG.gif) repeat-x;
+	height:42px;
+	padding:0 0 0 20px;
+}
+
+.navtabs li:first-child
+{
+	border-left:0;
+}
+
+.navtabs ul
+{
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top:0;
+	direction:ltr;
+	left:0;
+	margin-right:-80px;
+	position:absolute;
+	top:42px;
+	width:100%;
+}
+
+.navtabs li
+{
+	border-right:0;
+	float:left;
+}
+
+.navtabs ul li:first-child
+{
+	border-left:0;
+	margin-left:20px;
+}
+
+#navtabs .popupmenu ul li:first-child
+{
+	margin-left:0;
+}
+
+.navtabs ul li
+{
+	border-right:0;
+	position:relative;
+}
+
+.navtabs li a
+{
+	height:42px;
+	line-height:42px;
+	padding:0 10px;
+}
+
+.navtabs li a.navtab
+{
+	background:#81a925 url(http://www.codingforums.com/images/styles/Modern/style/navBG.gif) repeat-x;
+	border-left:0;
+	border-top:0;
+	color:#fff;
+	display:block;
+	font:bold 12px arial,helvetica,sans-serif;
+	line-height:42px;
+	min-width:60px;
+	padding:0 10px;
+	text-align:center;
+	text-decoration:none;
+	width:auto!important;
+}
+
+.navtabs li a.navtab:hover
+{
+	background:#81a925 url(http://www.codingforums.com/images/styles/Modern/style/navBG_hover.gif) repeat center top 0 0;
+	color:#000;
+}
+
+.navtabs li.selected
+{
+	color:#000;
+	height:42px;
+}
+
+.navtabs li.selected a.navtab
+{
+	background:#81a925 url(http://www.codingforums.com/images/styles/Modern/style/navBG_hover.gif) repeat center top;
+	color:#000;
+	position:relative;
+	top:0;
+	z-index:10;
+}
+
+.navtabs > ul.floatcontainer li a,.navbar_advanced_search li a
+{
+	font:12px arial,helvetica,sans-serif;
+	line-height:42;
+	text-decoration:none;
+}
+
+.navtabs > ul.floatcontainer li a
+{
+	color:#fff;
+	padding:2px 5px;
+}
+
+.navtabs > ul.floatcontainer ul.popupbody a
+{
+	line-height:26px;
+}
+
+.navbar_advanced_search li
+{
+	clear:both;
+	display:block;
+	height:42px;
+}
+
+.navbar_advanced_search li a
+{
+	color:#fff;
+}
+
+.navbar_advanced_search li a:hover
+{
+	color:#daeda8;
+	text-decoration:none;
+}
+
+.navtabs > ul.floatcontainer li a:hover
+{
+	color:#daeda8;
+	text-decoration:none;
+}
+
+.navtabs > ul.floatcontainer .popupbody li a
+{
+	background:#FFF none;
+	color:#000;
+	padding:0 10px;
+	text-indent:0;
+}
+
+.navtabs > ul.floatcontainer .popupbody li a:hover
+{
+	background:#d1e9c8 none;
+	color:#000;
+}
+
+.navtabs > ul.floatcontainer li a.popupctrl
+{
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	background:transparent url(http://www.codingforums.com/images/styles/Modern/misc/arrow.png) no-repeat right center;
+	border:solid 0 transparent;
+	border-radius:3px;
+	color:#fff;
+	padding-right:15px;
+}
+
+.navtabs li a.navtab.popupctrl img
+{
+	padding-bottom:3px;
+	vertical-align:middle;
+}
+
+.toplinks .notifications a.popupctrl
+{
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	background:#81a925 url(http://www.codingforums.com/images/styles/Modern/misc/arrow.png) right center no-repeat;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	padding:3px 15px 3px 4px;
+}
+
+.toplinks .nonotifications a.popupctrl
+{
+	background:transparent url(http://www.codingforums.com/images/styles/Modern/misc/arrow.png) no-repeat right center;
+	padding:3px 15px 3px 4px;
+}
+
+.toplinks .notifications a.popupctrl:hover,.toplinks .nonotifications a.popupctrl:hover,.toplinks .nonotifications a.popupctrl.active,.toplinks .notifications a.popupctrl.active
+{
+	background:#81a925 url(http://www.codingforums.com/images/styles/Modern/misc/arrow.png) no-repeat right center;
+	padding:3px 15px 3px 4px;
+}
+
+.toplinks .notifications a.popupctrl:hover
+{
+	padding-top:3px;
+}
+
+.navtabs > ul.floatcontainer li:hover a.popupctrl
+{
+	background-color:#81a925;
+	border-color:#81a925;
+	text-decoration:none;
+}
+
+.navtabs > ul.floatcontainer li:hover a.popupctrl.active,.navtabs > ul.floatcontainer li a.popupctrl.active
+{
+	background-color:#81a925;
+	border-color:#81a925;
+	border-radius:3px 3px 0 0;
+	color:#fff;
+	text-decoration:none;
+}
+
+.navtabs .popupbody
+{
+	background:#81a925;
+	border:1px solid #81a925;
+	width:auto;
+}
+
+.navtabs .popupbody li
+{
+	border-top:1px solid #81a925;
+	float:none;
+}
+
+#navtabs .popupmenu ul,#navtabs .popupmenu ul li a
+{
+	height:auto;
+}
+
+.nonotifications div.popupbody
+{
+	background:#81a925;
+	border:1px solid #81a925;
+	min-width:170px;
+	width:auto!important;
+}
+
+.nonotifications .popupbody p
+{
+	background:#FFF none;
+	border-top:1px solid #81a925;
+	color:#000;
+	display:block;
+	line-height:42px;
+	padding:0;
+	text-align:left;
+	text-indent:5px;
+}
+
+.toplinks .nonotifications .popupbody a
+{
+	background:#FFF none;
+	clear:none;
+	color:#000;
+	float:none;
+	line-height:26px;
+	margin-left:0;
+	padding:0 5px;
+	text-align:left;
+}
+
+.toplinks .nonotifications .popupbody a:hover
+{
+	background:#d1e9c8 none;
+	color:#000;
+	padding:0 5px;
+	text-decoration:none;
+}
+
+.globalsearch
+{
+	clear:left;
+	display:block;
+	float:right;
+	line-height:1em;
+	position:absolute;
+	right:20px;
+	text-align:right;
+	top:0;
+	width:180px;
+}
+
+.navbar_search
+{
+	display:block;
+	position:relative;
+	right:-21px;
+	width:179px;
+}
+
+.navbar_search input
+{
+	border:1px solid #cdc9bf;
+	font-size:10px;
+	padding:1px;
+	vertical-align:middle;
+}
+
+.globalsearch .textboxcontainer
+{
+	border-left:0;
+	display:inline-block;
+	float:left;
+	height:42px;
+	text-align:center;
+}
+
+.globalsearch .textboxcontainer span
+{
+	border-left:0;
+	border-top:0;
+	display:inline-block;
+	height:38px;
+	margin-bottom:1px;
+	padding-left:2px;
+	padding-right:2px;
+	padding-top:3px;
+	width:147px;
+}
+
+.globalsearch input.textbox
+{
+	width:120px;
+}
+
+.toplinks form input.loginbutton
+{
+	border:solid 1px #415d8d;
+	font-size:10px;
+	padding:0 5px;
+}
+
+.globalsearch .buttoncontainer
+{
+	border-left:0;
+	border-right:0;
+	display:inline-block;
+	float:right;
+	height:42px;
+	overflow:hidden;
+	width:25px;
+}
+
+.globalsearch .buttoncontainer span
+{
+	border-left:0;
+	border-top:0;
+	display:inline-block;
+	height:39px;
+	padding-left:4px;
+	padding-top:10.5px;
+}
+
+.globalsearch .searchbutton
+{
+	border:0;
+	margin-left:-2px;
+	margin-top:-2px;
+	padding:0;
+	width:22px;
+}
+
+.breadcrumb .navbit
+{
+	background-image:url(http://www.codingforums.com/images/styles/Modern/misc/navbit-arrow-right.png);
+	background-position:right center;
+	background-repeat:no-repeat;
+	float:left;
+	padding-left:3px;
+	padding-right:10px;
+}
+
+.breadcrumb .navbit:first-child
+{
+	padding-left:0;
+}
+
+.breadcrumb .navbit.lastnavbit
+{
+	background:transparent;
+}
+
+.breadcrumb .navbit.lastnavbit span
+{
+	background:transparent;
+	float:left;
+	padding-left:3px;
+	padding-right:10px;
+}
+
+.breadcrumb .navbit > a,.breadcrumb .lastnavbit > span
+{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-radius:5px;
+	display:block;
+	float:left;
+	padding:2px 4px;
+}
+
+.breadcrumb .navbit a
+{
+	text-decoration:none;
+}
+
+.breadcrumb hr
+{
+	display:none;
+}
+
+#pagetitle
+{
+	background:none;
+	clear:both;
+	padding:5px 0 0;
+}
+
+#pagetitle h1
+{
+	color:inherit;
+	font:normal normal bold 14px Tahoma,Calibri,Verdana,Geneva,sans-serif;
+}
+
+#pagetitle .description
+{
+	color:inherit;
+	font-size:10.2px;
+}
+
+.newcontent_textcontrol
+{
+	-moz-border-radius:5px;
+	-moz-box-shadow:0 3px 8px none;
+	-webkit-border-radius:5px;
+	-webkit-box-shadow:0 3px 8px none;
+	_background-image:none;
+	background:#2f2f2f url(http://www.codingforums.com/images/buttons/newbtn_middle.png) repeat-x left top;
+	border:1px solid #2f2f2f;
+	border-radius:5px;
+	box-shadow:0 3px 8px none;
+	clear:right;
+	color:#fff;
+	display:block;
+	float:left;
+	font:normal 14px Arial,sans-serif;
+	padding:4px 15px;
+}
+
+.newcontent_textcontrol span
+{
+	display:inline;
+	font:normal 14px Arial,sans-serif;
+	font-size:15px;
+	font-weight:700;
+}
+
+.newcontent_textcontrol:hover
+{
+	background:#555 url(http://www.codingforums.com/images/buttons/newbtn_middle.png) repeat-x left top;
+	color:#fff;
+	text-decoration:none;
+}
+
+.footer
+{
+	-moz-box-shadow:-2px 2px 2px none;
+	-webkit-box-shadow:-2px 2px 2px none;
+	background:none;
+	border:0;
+	box-shadow:-2px 2px 2px none;
+	clear:both;
+	display:block;
+	font:normal 13px Tahoma,Calibri,Verdana,Geneva,sans-serif;
+	margin-top:15px;
+	padding:0;
+	text-align:right;
+}
+
+.footer a
+{
+	color:#fff;
+}
+
+.footer a:hover
+{
+	color:#fff;
+}
+
+.footer_copyright,.footer_morecopyright
+{
+	color:#666;
+	display:block;
+	font:normal 11px Tahoma,Calibri,Verdana,Geneva,sans-serif;
+	margin-top:10px;
+	padding-bottom:5px;
+	text-align:center;
+}
+
+.footer_time
+{
+	color:#666;
+	font:normal 11px Tahoma,Calibri,Verdana,Geneva,sans-serif;
+	padding-top:10px;
+	text-align:center;
+}
+
+.footer_select
+{
+	float:left;
+	margin-left:10px;
+	margin-top:0;
+	text-align:left;
+}
+
+.footer_links
+{
+	margin-right:10px;
+	margin-top:2px;
+}
+
+.footer_links li
+{
+	display:inline;
+	margin-left:5px;
+}
+
+.below_body .time
+{
+	color:#3e3e3e;
+}
+
+.notices
+{
+	background:#fff;
+	margin:5px 0;
+}
+
+.notices li
+{
+	-moz-box-shadow:-2px 2px 2px none;
+	-webkit-box-shadow:-2px 2px 2px none;
+	background:#fff0ae none repeat-x left top;
+	box-shadow:-2px 2px 2px none;
+	clear:both;
+	color:#5d5d5d;
+	font-size:11px;
+	margin-bottom:5px;
+	padding:5px 10px;
+	text-align:left;
+}
+
+.breadcrumb .navbithome
+{
+	float:left;
+	padding:3px 0;
+}
+
+#ad_global_header1
+{
+	clear:right;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+#ad_global_header2
+{
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+#ad_global_below_navbar
+{
+	margin:0;
+	padding:0;
+	width:100%;
+}
+
+#ad_global_above_footer
+{
+	clear:both;
+	margin:0;
+	padding:0;
+	text-align:left;
+	width:100%;
+}
+
+#ad_board_below_whats_going_on
+{
+	margin:0;
+	padding:0;
+	text-align:left;
+	width:100%;
+}
+
+#ad_thread_first_post_content
+{
+	float:right;
+	margin:0;
+}
+
+#ad_thread_last_post_content
+{
+	float:right;
+	margin:0;
+	z-index:1000;
+}
+
+.google_adsense_footer
+{
+	clear:both;
+}
+
+.formcontrols input,select,textarea
+{
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.formcontrols input.textbox
+{
+	height:12px;
+}
+
+.formcontrols .blocksubhead
+{
+	font-weight:700;
+}
+
+.vbform .blockhead
+{
+	margin-top:2em;
+}
+
+.vbform .blockhead:first-child
+{
+	margin-top:0;
+}
+
+.settings_form_top_border
+{
+	border-top:0;
+}
+
+.blockbody.settings_form_border
+{
+	border-bottom:0;
+	border-left:0;
+	border-right:0;
+}
+
+.vbform
+{
+	_width:100%;
+	clear:both;
+	margin:0 auto 2em;
+	max-width:100%;
+	width:auto;
+}
+
+.formcontrols
+{
+	border-bottom:0;
+	border-left:0;
+	border-right:0;
+}
+
+.formcontrols .blockrow
+{
+	background:#FFF none repeat-x center bottom;
+	border-top:solid 1px #e8e6e1;
+	padding:10px 5px;
+}
+
+.formcontrols .section
+{
+	padding:0 15px;
+}
+
+.formcontrols > :first-child,.formcontrols .blocksubhead + .blockrow,.formcontrols .section .blockrow:first-child
+{
+	border-top:none;
+}
+
+.button[type=reset]:hover
+{
+	color:#76a11b;
+}
+
+.textbox,textarea,select
+{
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	background:#fff none;
+	border:1px solid #cdc9bf;
+	border-radius:3px;
+	color:#000;
+	font:normal 11px Tahoma,Calibri,Verdana,Geneva,sans-serif;
+	outline:0;
+	padding:4px;
+}
+
+.textbox[disabled],textarea[disabled]
+{
+	color:#777;
+	font-style:italic;
+}
+
+.formcontrols .blockrow input.textbox:focus,.formcontrols .blockrow textarea:focus
+{
+	background:#f3f3f3 none;
+}
+
+form .rightcol
+{
+	display:block;
+	float:none;
+	margin-left:0;
+	max-width:496px;
+}
+
+.blockbody.formcontrols .blockrow .rightcol *
+{
+	margin-left:0;
+	width:auto;
+}
+
+.blockbody.formcontrols .blockrow .rightcol .primary
+{
+	width:50%;
+}
+
+.blockbody.formcontrols .blockrow .rightcol textarea.primary
+{
+	width:70%;
+}
+
+.blockbody.formcontrols .blockrow .rightcol .description
+{
+	width:auto;
+}
+
+.formcontrols .blockrow .primary
+{
+	width:248px;
+}
+
+.formcontrols .blockrow .primary.full
+{
+	float:left;
+	max-width:100%;
+	width:496px;
+}
+
+.formcontrols .blockrow .group
+{
+	width:100%;
+}
+
+.formcontrols .blockrow .group li
+{
+	margin-top:5px;
+}
+
+.formcontrols .blockrow .group li:first-child
+{
+	margin-top:0;
+}
+
+.formcontrols .blockrow .group .textbox
+{
+	width:248px;
+}
+
+.formcontrols .blockrow .primary.center img.icon
+{
+	border:1px solid #415d8d;
+}
+
+.formcontrols .blockrow .titleprefix
+{
+	float:left;
+	margin-right:.5em;
+}
+
+.formcontrols .blockrow * .group
+{
+	float:none;
+	width:auto;
+}
+
+.formcontrols .blockrow input.textbox[size]
+{
+	width:auto;
+}
+
+.editor_textbox textarea
+{
+	float:none;
+	height:200px;
+	max-width:98%;
+	min-width:98%;
+	width:500px;
+}
+
+.editor_textbox textarea,#ie8#fix
+{
+	width:98%;
+}
+
+.formcontrols .blockrow input.numeric,.formcontrols .blockrow select.numeric
+{
+	text-align:right;
+}
+
+.formcontrols .blockrow label,.formcontrols .blockrow .group.multifield label,.formcontrols .blockrow .groupoption label
+{
+	display:block;
+	margin-bottom:2px;
+}
+
+.formcontrols .blockrow label
+{
+	float:left;
+	font-size:13px;
+	width:212px;
+}
+
+.formcontrols .blockrow label.full
+{
+	float:none;
+	font-weight:700;
+	width:auto;
+}
+
+.formcontrols .blockrow label.floatlabel
+{
+	margin-left:10px;
+}
+
+.formcontrols .blockrow * label
+{
+	display:block;
+	float:none;
+	margin-bottom:auto;
+	width:auto;
+}
+
+.formcontrols .blockrow .group li label,.formcontrols .blockrow .group dt label
+{
+	float:left;
+	width:212px;
+}
+
+.formcontrols .blockrow .group.full li label,.formcontrols .blockrow .group.full dt label
+{
+	width:auto;
+}
+
+.formcontrols .blockrow .label
+{
+	margin-bottom:8px;
+}
+
+.formcontrols .blockrow.singlecheck label
+{
+	float:left;
+}
+
+.formcontrols fieldset.blockrow legend
+{
+	font-size:13px;
+	font-weight:700;
+	margin:0;
+	padding-bottom:10px;
+}
+
+.formcontrols .blockrow .description
+{
+	color:#777;
+	font-size:12px;
+	line-height:150%;
+	margin-bottom:5px;
+	margin-left:212px;
+	max-width:496px;
+	overflow:hidden;
+}
+
+.formcontrols .blockrow .group.multifield + .description
+{
+	padding-top:1.3em;
+}
+
+.blockrow.texteditor .description
+{
+	float:none;
+	margin-top:2px;
+	width:auto;
+}
+
+.formcontrols .blockrow .singledescription
+{
+	clear:left;
+	display:block;
+	margin-bottom:10px;
+}
+
+.formcontrols .blockrow .group.checkradio
+{
+	width:auto;
+}
+
+.formcontrols .blockrow .group.checkradio li label
+{
+	float:none;
+}
+
+.formcontrols .blockrow .group.checkradio.full
+{
+	width:100%;
+}
+
+.formcontrols .blockrow .group.checkradio.partial
+{
+	width:212px;
+}
+
+.formcontrols .blockrow .group.checkradio.horizontal
+{
+	height:30px;
+}
+
+.formcontrols .blockrow .group.checkradio.horizontal li label
+{
+	float:left;
+	padding-right:10px;
+}
+
+.formcontrols .blockrow .group.checkradio > li
+{
+	margin-bottom:.5em;
+}
+
+.formcontrols .blockrow .group.multifield li
+{
+	float:left;
+	margin-right:1em;
+	margin-top:0;
+}
+
+.formcontrols .blockrow .group.multifield.stacked li
+{
+	float:none;
+	margin-top:2px;
+}
+
+.formcontrols .blockrow .group.multifield label
+{
+	display:block;
+	float:none;
+	margin-bottom:2px;
+	width:auto;
+}
+
+.formcontrols .blockrow .group.multifield select,.formcontrols .blockrow .group.multifield input.textbox
+{
+	float:none;
+}
+
+.formcontrols .blockrow .group.numeric
+{
+	margin-right:2%;
+	max-width:212px;
+	width:24%;
+}
+
+.formcontrols .blockrow .group.numeric li
+{
+	clear:both;
+}
+
+.formcontrols .blockrow .group.numeric label
+{
+	float:left;
+	margin-top:1px;
+}
+
+.formcontrols .blockrow .group.numeric input.textbox
+{
+	float:right;
+	margin-bottom:2px;
+	margin-left:20px;
+	text-align:right;
+}
+
+.formcontrols .blockrow .group.numeric .description
+{
+	clear:both;
+	margin:auto auto .2em;
+	text-align:right;
+}
+
+.formcontrols .blockrow input.textbox.numeric
+{
+	text-align:right;
+}
+
+.formcontrols input.button,.actionbuttons
+{
+	max-width:100%;
+}
+
+.blockfoot.actionbuttons.redirect_button
+{
+	background-color:transparent;
+	padding-top:5px;
+}
+
+.blockfoot.actionbuttons.redirect_button .group
+{
+	padding-right:0;
+}
+
+.actionbuttons .group
+{
+	float:none;
+	padding:0 10px;
+	text-align:right;
+}
+
+.vbform .actionbuttons .group
+{
+	_width:100%;
+	margin:0 auto;
+	max-width:100%;
+	width:auto;
+}
+
+.actionbuttons .small_text_buttons,.actionbuttons .small_text_buttons input.button
+{
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.actionbuttons .group .button
+{
+	background:#e9e9e9 url(http://www.codingforums.com/images/gradients/generic_button.png) repeat-x top left;
+	border:1px solid #a8a8a8;
+	color:#424242;
+	cursor:pointer;
+	font:bold 11px Tahoma,Calibri,Verdana,Geneva,sans-serif;
+	padding:2.5px 5px;
+}
+
+.actionbuttons .group .button:hover
+{
+	background:#efefef url(http://www.codingforums.com/images/gradients/generic_button.png) repeat-x;
+	color:#76a11b;
+}
+
+.formcontrols .blockrow #posticon_preview
+{
+	height:16px;
+	margin-left:10px;
+	width:16px;
+}
+
+.formcontrols .blockrow.posticons table
+{
+	max-width:100%;
+	width:496px;
+}
+
+.formcontrols .blockrow.posticons td
+{
+	padding:2px;
+}
+
+.formcontrols .blockrow select.rating option
+{
+	background-image:url(http://www.codingforums.com/images/styles/Modern/rating/rating-15_3.png);
+	background-position:left center;
+	background-repeat:no-repeat;
+	padding-left:85px;
+}
+
+.formcontrols .blockrow dl.dep_group dd,.formcontrols .blockrow .dep_group .deps
+{
+	margin-bottom:.2em;
+	margin-left:1.5em;
+	margin-top:.5em;
+}
+
+input[type=submit][disabled]#blog_deletebtn:active,input[type=submit][disabled]#blog_deletebtn
+{
+	color:graytext;
+}
+
+.formcontrols .blockrow .group.attachments li
+{
+	margin-bottom:.5em;
+}
+
+.formcontrols .blockrow .group.attachments li img
+{
+	vertical-align:middle;
+}
+
+.formcontrols .group.upperlower li,.formcontrols .group.imfields li
+{
+	padding-bottom:.3em;
+	width:45%;
+}
+
+.formcontrols .group.upperlower li input.textbox,.formcontrols .group.imfields li input.textbox,.formcontrols .group.imfields li select
+{
+	width:100%;
+}
+
+.formcontrols .group.imfields li select
+{
+	margin-bottom:-.3em;
+}
+
+.groupcontrols
+{
+	clear:both;
+	margin-bottom:5px;
+	text-align:right;
+}
+
+.groupcontrols .textcontrol
+{
+	display:inline-block;
+	margin-left:10px;
+	margin-top:0;
+}
+
+.formcontrols .groupoption
+{
+	clear:left;
+	display:block;
+}
+
+.group.radio,.group.checkbox
+{
+	background:#f3f3f3 none;
+}
+
+.formcontrols .blockrow .group.checkradio .daycheckboxes li
+{
+	float:left;
+	padding-right:1em;
+	padding-top:.5em;
+}
+
+.savepreferences
+{
+	float:left;
+	text-align:left;
+	width:49.5%;
+}
+
+.formcontrols #fbregbox.blockrow.hidden
+{
+	visibility:hidden;
+}
+
+#tag_list_cell .formcontrols .blockrow .group li label,#tag_list_cell .formcontrols .blockrow .group dt label
+{
+	width:auto;
+}
+
+#tag_list_cell .formcontrols .blockrow .group li
+{
+	margin-top:0;
+}
+
+.picker-holder
+{
+	background-color:#fff;
+	display:block;
+	margin:auto;
+	text-align:center;
+	top:20px;
+}
+
+.picker
+{
+	background:0 );
+	background-color:#aaa;
+	display:block;
+}
+
+.lightgraybackground
+{
+	background:0 );
+	background-color:#fff;
+}
+
+.centerbar
+{
+	left:50%;
+	position:absolute;
+	width:2px;
+}
+
+.hbar
+{
+	display:block;
+	height:2px;
+	margin-bottom:4px;
+	text-align:center;
+	width:100%;
+}
+
+.alert_box
+{
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	background:0 );
+	background-color:#aaa;
+	border:#000 2px solid;
+	border-radius:10px;
+	color:#222;
+	display:block;
+	position:absolute;
+	text-align:center;
+	z-index:10;
+}
+
+.alert_box .hd
+{
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	color:#fff;
+	display:none;
+	text-align:center;
+}
+
+.alert_box .bd
+{
+	-moz-border-radius-topleft:10px;
+	-moz-border-radius-topright:10px;
+	-webkit-border-radius-topleft:10px;
+	-webkit-border-radius-topright:10px;
+	background:0 );
+	color:#222;
+}
+
+.alert_box .ft
+{
+	background:0 );
+	text-align:right;
+}
+
+.alert_box .ft input.btn
+{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	background:0 );
+	border:1px #fff solid;
+	border-radius:5px;
+	color:#fff;
+	display:none;
+	float:right;
+	font-weight:700;
+	margin:4px 10px;
+	padding-bottom:4px;
+	padding-top:4px;
+	text-align:center;
+}
+
+.ok_button
+{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	background:0 );
+	border:1px #fff solid;
+	border-radius:5px;
+	color:#fff;
+	display:none;
+	float:right;
+	font-weight:700;
+	margin:4px 10px;
+	padding-bottom:4px;
+	padding-top:4px;
+	text-align:center;
+	width:80px;
+}
+
+.attach_popup
+{
+	-moz-border-radius:5px;
+	background-color:#aaa;
+	border:1px #000 solid;
+	border-radius:5px;
+	display:none;
+	margin:0;
+	padding:0;
+}
+
+.assetpicker_body
+{
+	background:0 );
+	background-color:#bbb;
+	display:block;
+	padding:5px;
+	width:100%;
+}
+
+.transparent
+{
+	background-color:transparent;
+}
+
+.grey_select_item
+{
+	background-color:#eee;
+}
+
+.tall_select
+{
+	height:30px;
+}
+
+.vbseo_buttons
+{
+	font-size:12px;
+	position:relative;
+}
+
+.vbseo_buttons .vbseo_links
+{
+	margin:0;
+	padding:10px;
+	visibility:hidden;
+	width:auto;
+}
+
+.vbseo_buttons .vbseo_share,.vbseo_buttons .vbseo_like,.vbseo_buttons .seperator
+{
+	display:inline-block;
+	float:right;
+	padding:0 4px;
+}
+
+.vbseo_buttons .vbseo_liked
+{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	background:#f8f8f8 url(http://www.codingforums.com/vbseo/resources/images/forum/vbseo_like.png) 5px center no-repeat;
+	border-color:#D5D5D5 #B3B3B3 #999;
+	border-radius:5px;
+	border-style:solid;
+	border-width:1px;
+	clear:both;
+	display:block;
+	margin:10px;
+	padding:7px 7px 7px 25px;
+}
+
+.vbseo_liked_image
+{
+	left:5px;
+	position:absolute;
+	top:5px;
+}
+
+.postbit-lite .postbithead.likehead
+{
+	font-size:12px;
+	line-height:1.5em;
+	max-height:1.05em;
+	overflow:hidden;
+	padding:6px 10px 7px;
+}
+
+.postbit-lite .postbithead.likehead strong
+{
+	font-size:12px;
+	font-weight:900;
+}
+
+.postbit-lite .posttext.likedate
+{
+	color:#777;
+	font-size:12px;
+	margin-top:-10px;
+}
+
+.postbit-lite .posttext.likedate .time
+{
+	color:#777;
+}
+
+.vbseo_share_body
+{
+	-moz-border-radius:5px;
+	-moz-box-shadow:0 4px 7px;
+	-webkit-border-radius:5px;
+	-webkit-box-shadow:0 4px 7px;
+	background:#f8f8f8;
+	border:1px solid #dedede;
+	border-radius:5px;
+	box-shadow:0 4px 7px;
+	position:absolute;
+	right:0;
+	visibility:hidden;
+	width:280px;
+	z-index:9000;
+}
+
+.restore .vbseo_share_body
+{
+	top:-80px;
+}
+
+.vbseo_share:hover .vbseo_share_body
+{
+	visibility:visible;
+}
+
+.vbseo_share_body li
+{
+	border:none;
+	width:140px;
+}
+
+.restore ul.vbseo_share_body li
+{
+	list-style:none inside;
+}
+
+.vbseo_share_body li:hover
+{
+	background:#ffeb90;
+}
+
+.vbseo_share_body li.share_header
+{
+	-moz-border-radius:5px;
+	-moz-border-radius-bottomleft:0;
+	-moz-border-radius-bottomright:0;
+	-webkit-border-radius:5px;
+	-webkit-bottom-left-border-radius:0;
+	-webkit-bottom-right-border-radius:0;
+	background:#ddd;
+	border-bottom-left-radius:0;
+	border-bottom-right-radius:0;
+	border-radius:5px;
+	font-size:120%;
+	padding:3px 5px;
+	width:270px;
+}
+
+.vbseo_share_body li:hover.header
+{
+	background:#ddd;
+}
+
+.vbseo_share_body li.left
+{
+	clear:left;
+	float:left;
+}
+
+.vbseo_share_body li.right
+{
+	clear:right;
+	float:right;
+}
+
+.vbseo_share_body li img
+{
+	float:left;
+	margin:0;
+	padding:4px;
+	position:relative;
+	top:-2px;
+}
+
+.vbseo_share_body li > a
+{
+	color:#343434;
+	display:block;
+	padding:4px;
+	text-decoration:none;
+}
+
+#vbseo-likes
+{
+	-moz-border-radius:5px;
+	-webkit-radius-border:5px;
+	background-color:#f6f6f6;
+	border:1px solid #e7e7e7;
+	border-radius:5px;
+	color:0;
+	cursor:pointer;
+	float:right;
+	font-family:Arial,Helvetica,sans-serif;
+	height:50px;
+	margin:0;
+	min-width:108px;
+	position:relative;
+	width:128px;
+	z-index:10000;
+}
+
+#vbseo-likes:hover
+{
+	background-color:#F3F3F3;
+}
+
+#vbseo-likes.vbseo-likes-preload,#vbseo-likes.vbseo-likes-tpreload
+{
+	background:url(http://www.codingforums.com/vbseo/resources/images/forum/vbseo-likes-ajax-loader.gif) no-repeat scroll 95% 5% #F3F3F3;
+}
+
+#vbseo-likes.vbseo-likes-preload .vbseo-likes-count,#vbseo-likes.vbseo-likes-tpreload .vbseo-likes-count
+{
+	opacity:.4;
+}
+
+#vbseo-likes.vbseo-likes-active,#vbseo-likes.vbseo-likes-tpreload
+{
+	-moz-border-radius:5px 5px 0 0;
+	-moz-box-shadow:2px 4px 5px #CCC;
+	-webkit-box-shadow:2px 4px 5px #CCC;
+	-webkit-radius-border:5px 5px 0 0;
+	background-color:#F3F3F3;
+	border-bottom-color:#F3F3F3;
+	border-radius:5px 5px 0 0;
+	box-shadow:2px 4px 5px #CCC;
+}
+
+.vbseo-likes-count
+{
+	float:right;
+	font-family:Tahoma,Calibri,Verdana,Geneva,sans-serif;
+	font-size:26px;
+	font-weight:700;
+	height:30px;
+	padding:9px 9px 11px 40px;
+	position:relative;
+}
+
+.vbseo-likes-count-image
+{
+	left:10px;
+	position:absolute;
+	top:13px;
+}
+
+.vbseo-likes-count em
+{
+	background:url(http://www.codingforums.com/vbseo/resources/images/forum/lkarrow.png) no-repeat scroll right -2px transparent;
+	font-size:11px;
+	font-style:normal;
+	font-weight:400;
+	margin-left:4px;
+	padding-right:14px;
+}
+
+#vbseo-likes.vbseo-likes-active .vbseo-likes-container,#vbseo-likes.vbseo-likes-tpreload .vbseo-likes-container
+{
+	display:block;
+}
+
+.vbseo-likes-container
+{
+	-moz-border-radius:5px 0 5px 5px;
+	-moz-box-shadow:2px 4px 5px #CCC;
+	-webkit-border-radius:5px 0 5px 5px;
+	-webkit-box-shadow:2px 4px 5px #CCC;
+	_width:196px;
+	background-color:#F3f3f3;
+	border:1px solid #e7e7e7;
+	border-radius:5px 0 5px 5px;
+	border-top:none;
+	box-shadow:2px 4px 5px #CCC;
+	display:none;
+	min-width:196px;
+	position:absolute;
+	right:-1px;
+	top:50px;
+	z-index:10002;
+}
+
+ul.vbseo-likes-tabs
+{
+	list-style:inside none;
+	margin:0;
+	padding:9px 10px 6px;
+	z-index:10003;
+}
+
+ul.vbseo-likes-tabs li
+{
+	display:inline;
+	line-height:12px;
+	margin:0;
+	padding:0;
+	z-index:10004;
+}
+
+ul.vbseo-likes-tabs li a
+{
+	font-size:11px;
+	padding:1px 5px;
+	text-decoration:none;
+}
+
+ul.vbseo-likes-tabs li a:hover,ul.vbseo-likes-tabs li a.active
+{
+	-moz-border-radius:3px;
+	background-color:#888;
+	border-radius:3px;
+	color:#FFF;
+}
+
+ul.vbseo-likes-tabs li.vbseo-likes-fusion
+{
+	background-color:#F3F3F3;
+	height:1px;
+	position:absolute;
+	right:0;
+	top:-1px;
+	width:108px;
+}
+
+ul.vbseo-likes-list
+{
+	background-color:#fff;
+	border-bottom:1px solid #EBEBEB;
+	list-style:inside none;
+	margin:3px;
+	padding:0;
+	z-index:10003;
+}
+
+.vbseo-likes-list li
+{
+	border-top:1px solid #EBEBEB;
+	cursor:pointer;
+	font-size:14px;
+	line-height:12px;
+	margin:0;
+	padding:8px 10px;
+	position:relative;
+	z-index:10004;
+}
+
+.vbseo-likes-list li:hover
+{
+	background-color:#ffeb90;
+}
+
+.vbseo-likes-avatar
+{
+	float:left;
+	height:24px;
+	overflow:hidden;
+	width:24px;
+	z-index:10005;
+}
+
+.vbseo-likes-info
+{
+	line-height:12px;
+	margin-left:33px;
+	z-index:10005;
+}
+
+.vbseo-likes-hearts
+{
+	background:url(http://www.codingforums.com/vbseo/resources/images/forum/vbseo_like_bg.png) no-repeat scroll 100% 2px transparent;
+	height:16px;
+	position:absolute;
+	right:10px;
+	top:15px;
+	z-index:10006;
+}
+
+.vbseo-likes-hearts strong
+{
+	font-size:16px;
+	font-weight:700;
+	padding-right:16px;
+	z-index:1;
+}
+
+.vbseo-likes-postby
+{
+	color:#999;
+	display:block;
+	font-size:11px;
+	margin-left:33px;
+	margin-right:44px;
+	word-wrap:break-word;
+	z-index:10006;
+}
+
+.vbseo-likes-postby strong
+{
+	color:#3e3e3e;
+	display:block;
+	font-size:12px;
+	font-weight:400;
+	height:14px;
+	white-space:nowrap;
+}
+
+.vbseo-likes-link
+{
+	height:100%;
+	left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+	z-index:10004;
+}
+
+.vbseo-likes-tipsy
+{
+	display:none;
+	font-size:10px;
+	left:-230px;
+	opacity:0.8;
+	padding:5px;
+	position:absolute;
+	top:0;
+	z-index:100005;
+}
+
+.vbseo-likes-list li:hover .vbseo-likes-tipsy
+{
+	display:block!important;
+}
+
+.vbseo-likes-tipsy-arrow
+{
+	background:url(http://www.codingforums.com/vbseo/resources/images/forum/vbseo-like-arrow.gif) no-repeat scroll left top transparent;
+	background-position:right top;
+	height:9px;
+	position:absolute;
+	right:1px;
+	top:16px;
+	width:5px;
+}
+
+.vbseo-likes-tipsy-inner
+{
+	-moz-border-radius:3px;
+	background-color:#000;
+	border-radius:3px;
+	color:#FFF;
+	min-height:23px;
+	padding:5px 8px 4px;
+	text-align:left;
+	width:200px;
+	word-break:break-all;
+}

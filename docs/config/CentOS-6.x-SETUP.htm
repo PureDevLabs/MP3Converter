@@ -1,0 +1,1701 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List href="CentOS-6.x-SETUP_files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Randall Jaffe</o:Author>
+  <o:LastAuthor>Randy</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>5635</o:TotalTime>
+  <o:Created>2015-10-13T12:27:00Z</o:Created>
+  <o:LastSaved>2015-10-13T12:28:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>511</o:Words>
+  <o:Characters>2916</o:Characters>
+  <o:Lines>24</o:Lines>
+  <o:Paragraphs>6</o:Paragraphs>
+  <o:CharactersWithSpaces>3421</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="CentOS-6.x-SETUP_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="CentOS-6.x-SETUP_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DisplayBackgroundShape/>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:DefaultTableStyle Number="0">Normal</w:DefaultTableStyle>
+  <w:DrawingGridHorizontalSpacing>0 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>0 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:DrawingGridHorizontalOrigin>0 pt</w:DrawingGridHorizontalOrigin>
+  <w:DrawingGridVerticalOrigin>0 pt</w:DrawingGridVerticalOrigin>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:UseWord2002TableStyleRules/>
+   <w:DontUseIndentAsNumberingTabStop/>
+   <w:FELineBreak11/>
+   <w:WW11IndentRules/>
+   <w:DontAutofitConstrainedTables/>
+   <w:AutofitLikeWW11/>
+   <w:HangulWidthLikeWW11/>
+   <w:UseNormalStyleForList/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:\5B8B\4F53;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:32771 0 0 0 1 0;}
+@font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:32771 0 0 0 1 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1593833729 1073750107 16 0 415 0;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-520092929 1073806591 9 0 415 0;}
+@font-face
+	{font-family:NSimSun;
+	panose-1:2 1 6 9 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"Microsoft YaHei";
+	panose-1:2 11 5 3 2 2 4 2 2 4;
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 672087122 22 0 262175 0;}
+@font-face
+	{font-family:"\@Microsoft YaHei";
+	panose-1:2 11 5 3 2 2 4 2 2 4;
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 672087122 22 0 262175 0;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@NSimSun";
+	panose-1:2 1 6 9 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:SimSun;
+	mso-bidi-font-family:Mangal;
+	mso-ansi-language:RU;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:Heading;
+	mso-style-next:"Body Text";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.3in;
+	text-indent:-.3in;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	mso-list:l0 level1 lfo1;
+	mso-hyphenate:none;
+	tab-stops:list .3in;
+	font-size:16.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Microsoft YaHei";
+	mso-bidi-font-family:Mangal;
+	mso-font-kerning:0pt;
+	mso-ansi-language:RU;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:Heading;
+	mso-style-next:"Body Text";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.4in;
+	text-indent:-.4in;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-list:l0 level2 lfo1;
+	mso-hyphenate:none;
+	tab-stops:list .4in;
+	font-size:14.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Microsoft YaHei";
+	mso-bidi-font-family:Mangal;
+	mso-ansi-language:RU;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;
+	font-style:italic;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:Heading;
+	mso-style-next:"Body Text";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	text-indent:-.5in;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	mso-list:l0 level3 lfo1;
+	mso-hyphenate:none;
+	tab-stops:list .5in;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:SimSun;
+	mso-bidi-font-family:Mangal;
+	mso-ansi-language:RU;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:no-line-numbers;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:SimSun;
+	mso-bidi-font-family:Mangal;
+	mso-ansi-language:RU;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;
+	font-style:italic;}
+p.MsoList, li.MsoList, div.MsoList
+	{mso-style-unhide:no;
+	mso-style-parent:"Body Text";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:none;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:SimSun;
+	mso-bidi-font-family:Mangal;
+	mso-ansi-language:RU;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:Heading;
+	mso-style-next:"Body Text";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:center;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-hyphenate:none;
+	font-size:18.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Microsoft YaHei";
+	mso-bidi-font-family:Mangal;
+	mso-ansi-language:RU;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-unhide:no;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:none;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:SimSun;
+	mso-bidi-font-family:Mangal;
+	mso-ansi-language:RU;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:Heading;
+	mso-style-next:"Body Text";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:center;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-hyphenate:none;
+	font-size:14.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Microsoft YaHei";
+	mso-bidi-font-family:Mangal;
+	mso-ansi-language:RU;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;
+	font-style:italic;}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	mso-style-parent:"";
+	color:navy;
+	mso-ansi-language:#00FF;
+	mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+span.Teletype
+	{mso-style-name:Teletype;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:NSimSun;
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+p.Heading, li.Heading, div.Heading
+	{mso-style-name:Heading;
+	mso-style-unhide:no;
+	mso-style-next:"Body Text";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-hyphenate:none;
+	font-size:14.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Microsoft YaHei";
+	mso-bidi-font-family:Mangal;
+	mso-ansi-language:RU;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+p.Index, li.Index, div.Index
+	{mso-style-name:Index;
+	mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:no-line-numbers;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:SimSun;
+	mso-bidi-font-family:Mangal;
+	mso-ansi-language:RU;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+p.PreformattedText, li.PreformattedText, div.PreformattedText
+	{mso-style-name:"Preformatted Text";
+	mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-hyphenate:none;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:NSimSun;
+	mso-ansi-language:RU;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+p.Quotations, li.Quotations, div.Quotations
+	{mso-style-name:Quotations;
+	mso-style-unhide:no;
+	margin-top:0in;
+	margin-right:28.35pt;
+	margin-bottom:14.15pt;
+	margin-left:28.35pt;
+	mso-pagination:none;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:SimSun;
+	mso-bidi-font-family:Mangal;
+	mso-ansi-language:RU;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:54.55pt 56.7pt 57.1pt 56.7pt;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1;
+	mso-list-template-ids:1;}
+@list l0:level1
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:.3in;
+	mso-level-number-position:left;
+	margin-left:.3in;
+	text-indent:-.3in;}
+@list l0:level2
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:.4in;
+	mso-level-number-position:left;
+	margin-left:.4in;
+	text-indent:-.4in;}
+@list l0:level3
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.5in;}
+@list l0:level4
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:.6in;
+	mso-level-number-position:left;
+	margin-left:.6in;
+	text-indent:-.6in;}
+@list l0:level5
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:.7in;
+	mso-level-number-position:left;
+	margin-left:.7in;
+	text-indent:-.7in;}
+@list l0:level6
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:.8in;
+	mso-level-number-position:left;
+	margin-left:.8in;
+	text-indent:-.8in;}
+@list l0:level7
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:.9in;
+	mso-level-number-position:left;
+	margin-left:.9in;
+	text-indent:-.9in;}
+@list l0:level8
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-1.0in;}
+@list l0:level9
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:1.1in;
+	mso-level-number-position:left;
+	margin-left:1.1in;
+	text-indent:-1.1in;}
+@list l1
+	{mso-list-id:556010433;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1136164632 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l2
+	{mso-list-id:1020815344;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1335651920 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l2:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l2:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l2:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l2:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l3
+	{mso-list-id:1876890816;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2068622188 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l3:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l3:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l3:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l3:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l3:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l3:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l3:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l4
+	{mso-list-id:1880048258;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1945362042 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l4:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l4:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l4:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l4:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l4:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l4:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l4:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:59;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=navy vlink=purple style='tab-interval:35.45pt;line-break:
+strict'>
+
+<div class=WordSection1>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><span
+style='font-family:"Verdana","sans-serif";mso-ansi-language:EN-US'>Software
+installation on</span><span lang=RU style='font-family:"Verdana","sans-serif"'>
+CentOS 6.x</span><span style='font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:center'><span style='font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='background:#F2F2F2;border-collapse:collapse;border:none;mso-border-alt:
+ solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt;
+ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=657 valign=top style='width:492.7pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  mso-ansi-language:EN-US'><br>
+  <b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
+  style='mso-spacerun:yes'>      </span>…Please note:<o:p></o:p></i></b></span></p>
+  <p class=MsoBodyText style='margin-left:.5in;text-indent:-.25in;mso-list:
+  l4 level1 lfo2'><![if !supportLists]><span style='font-size:9.0pt;font-family:
+  Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+  EN-US'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  mso-ansi-language:EN-US'>These instructions are provided as a convenience and
+  courtesy to you. They are not a substitute for a professional server
+  configuration. Generally, it is not my responsibility to teach you how to install
+  and configure packages on a Linux system.<o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-left:.5in;text-indent:-.25in;mso-list:
+  l4 level1 lfo2'><![if !supportLists]><span style='font-size:9.0pt;font-family:
+  Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+  EN-US'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span style='font-size:9.0pt;font-family:"Verdana","sans-serif";
+  mso-ansi-language:EN-US'>These instructions were tested on a CentOS system <i
+  style='mso-bidi-font-style:normal'>without</i> cPanel installed. If you have
+  cPanel installed, or you want to install cPanel, some modification of these
+  instructions may be required.<br style='mso-special-character:line-break'>
+  <![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+  <![endif]><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><span
+style='font-family:"Verdana","sans-serif";mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><span
+lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><span
+lang=RU style='font-family:"Verdana","sans-serif"'>1.</span><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'> I</span><span lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'>nstall
+Apache.<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><span
+lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;margin-bottom:.0001pt'><b><span lang=RU style='font-size:
+9.5pt;font-family:"Verdana","sans-serif"'>#yum install httpd</span></b><span
+lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><b><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><span
+style='font-family:"Verdana","sans-serif";mso-ansi-language:EN-US'>2.</span><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'> </span><span class=GramE><span lang=RU style='font-size:9.5pt;
+font-family:"Verdana","sans-serif"'>wget</span></span><span lang=RU
+style='font-size:9.5pt;font-family:"Verdana","sans-serif"'> should be installed
+on host machine and also install gcc library</span><span style='font-size:9.5pt;
+font-family:"Verdana","sans-serif";mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;margin-bottom:.0001pt'><b style='mso-bidi-font-weight:normal'><span
+lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'>#yum install
+wget gcc</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'><o:p></o:p></span></b></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:9.5pt;font-family:
+"Verdana","sans-serif";mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><span
+style='font-family:"Verdana","sans-serif";mso-ansi-language:EN-US'>3</span><span
+lang=RU style='font-family:"Verdana","sans-serif"'>.</span><span lang=RU
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'> </span><span lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'>Then
+install epel repo.<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><span
+lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;margin-bottom:.0001pt'><b><span lang=RU style='font-size:
+9.5pt;font-family:"Verdana","sans-serif"'>#wget
+http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm<o:p></o:p></span></b></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;margin-bottom:.0001pt'><b><span lang=RU style='font-size:
+9.5pt;font-family:"Verdana","sans-serif"'>#rpm -Uvh epel-release-6-8.noarch.rpm</span></b><b><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'><o:p></o:p></span></b></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><span
+lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><span
+style='font-family:"Verdana","sans-serif";mso-ansi-language:EN-US'>4</span><span
+lang=RU style='font-family:"Verdana","sans-serif"'>.</span><span lang=RU
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'> </span><span class=GramE><span lang=RU style='font-size:9.5pt;
+font-family:"Verdana","sans-serif"'>Let's</span></span><span lang=RU
+style='font-size:9.5pt;font-family:"Verdana","sans-serif"'> install </span><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'>PHP and the PHP cURL extension</span><span lang=RU style='font-size:
+9.5pt;font-family:"Verdana","sans-serif"'>.</span><span style='font-size:9.5pt;
+font-family:"Verdana","sans-serif";mso-ansi-language:EN-US'> (At the time of
+this writing, t</span><span lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'>his
+install</span><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+mso-ansi-language:EN-US'>s</span><span lang=RU style='font-size:9.5pt;
+font-family:"Verdana","sans-serif"'> PHP 5.3</span><span style='font-size:9.5pt;
+font-family:"Verdana","sans-serif";mso-ansi-language:EN-US'>.)<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><span
+lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;margin-bottom:.0001pt'><b><span lang=RU style='font-size:
+9.5pt;font-family:"Verdana","sans-serif"'>#yum install php php-devel php-gd</span></b><b><span
+lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'> </span></b><b style='mso-bidi-font-weight:normal'><span lang=RU
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-bidi-font-family:
+Consolas;color:black'>php-common</span></b><b><span style='font-size:9.5pt;
+font-family:"Verdana","sans-serif";mso-ansi-language:EN-US'><o:p></o:p></span></b></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><span
+style='font-family:"Verdana","sans-serif";mso-ansi-language:EN-US'>5</span><span
+lang=RU style='font-family:"Verdana","sans-serif"'>.</span><span lang=RU
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'> </span><span lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'>Now
+let</span><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+mso-ansi-language:EN-US'>’</span><span lang=RU style='font-size:9.5pt;
+font-family:"Verdana","sans-serif"'>s make additional changes in <b>/etc/httpd/conf/httpd.conf</b></span><b><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'><o:p></o:p></span></b></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-indent:-.25in;mso-list:l3 level1 lfo3'><![if !supportLists]><span
+lang=RU style='font-size:9.5pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=RU style='font-size:9.5pt;font-family:
+"Verdana","sans-serif"'>By default</span><span style='font-size:9.5pt;
+font-family:"Verdana","sans-serif";mso-ansi-language:EN-US'>,</span><span
+lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'> Apache is
+using <b>/va</b></span><b><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+mso-ansi-language:EN-US'>r</span></b><b><span lang=RU style='font-size:9.5pt;
+font-family:"Verdana","sans-serif"'>/www/html </span></b><span lang=RU
+style='font-size:9.5pt;font-family:"Verdana","sans-serif"'>for </span><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'>the </span><span lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'>document
+root</span><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+mso-ansi-language:EN-US'> (or web root)</span><span lang=RU style='font-size:
+9.5pt;font-family:"Verdana","sans-serif"'>, </span><span style='font-size:9.5pt;
+font-family:"Verdana","sans-serif";mso-ansi-language:EN-US'>but </span><span
+lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'>you can
+change this value if you will use another directory.<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-indent:-.25in;mso-list:l3 level1 lfo3'><![if !supportLists]><span
+lang=RU style='font-size:9.5pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+mso-ansi-language:EN-US'>Y</span><span lang=RU style='font-size:9.5pt;
+font-family:"Verdana","sans-serif"'>ou need to uncomment this line </span><span
+lang=RU style='font-size:10.0pt;font-family:"Courier New";color:#632423;
+mso-bidi-font-weight:bold'>#ServerName www.example.com:80</span><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'>, and p</span><span lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'>ut
+there your website </span><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+mso-ansi-language:EN-US'>domain name </span><span lang=RU style='font-size:
+9.5pt;font-family:"Verdana","sans-serif"'>or </span><span style='font-size:
+9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:EN-US'>j</span><span
+lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'>ust </span><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'>the</span><span lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'>
+IP ad</span><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+mso-ansi-language:EN-US'>d</span><span lang=RU style='font-size:9.5pt;
+font-family:"Verdana","sans-serif"'>ress of your server.<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><span
+style='font-family:"Verdana","sans-serif";mso-ansi-language:EN-US'>6.</span><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'> </span><span lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'>Now
+start Apache.</span><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><b><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;margin-bottom:.0001pt'><b><span lang=RU style='font-size:
+9.5pt;font-family:"Verdana","sans-serif"'>#/etc/init.d/httpd start</span></b><span
+lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><span
+lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><span
+style='font-family:"Verdana","sans-serif";mso-ansi-language:EN-US'>7.</span><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'> </span><span lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'>Lets
+check if php is installed </span><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;margin-bottom:.0001pt'><b><span lang=RU style='font-size:
+9.5pt;font-family:"Verdana","sans-serif"'>#php </span></b><b><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'>-</span></b><b><span lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'>v</span></b><b><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'><o:p></o:p></span></b></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;margin-bottom:.0001pt'><span style='font-size:9.5pt;
+font-family:"Verdana","sans-serif";mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;margin-bottom:.0001pt'><span lang=RU style='font-size:9.5pt;
+font-family:"Verdana","sans-serif"'>You will rece</span><span style='font-size:
+9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:EN-US'>i</span><span
+lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'>ve output</span><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'> like the following (will vary</span><span lang=RU style='font-size:
+9.5pt;font-family:"Verdana","sans-serif"'> depending </span><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'>on</span><span lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif"'>
+PHP </span><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+mso-ansi-language:EN-US'>version</span><span lang=RU style='font-size:9.5pt;
+font-family:"Verdana","sans-serif"'> installed</span><span style='font-size:
+9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:EN-US'>):</span><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Verdana","sans-serif";
+mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;margin-bottom:.0001pt'><span lang=RU style='font-size:9.5pt;
+font-family:"Verdana","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;margin-bottom:.0001pt'><i style='mso-bidi-font-style:normal'><span
+lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif";color:#262626'>PHP
+5.3.3 (cli) (built: Sep 30 2014 05:55:00)<o:p></o:p></span></i></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;margin-bottom:.0001pt'><i style='mso-bidi-font-style:normal'><span
+lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif";color:#262626'>Copyright
+(c) 1997-2010 The PHP Group<o:p></o:p></span></i></p>
+
+<p class=MsoBodyText style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;margin-bottom:.0001pt'><i style='mso-bidi-font-style:normal'><span
+lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif";color:#262626'>Zend
+Engine v2.3.0, Copyright (c) 1998-2010 Zend Technologies</span></i><i
+style='mso-bidi-font-style:normal'><span style='font-size:9.5pt;font-family:
+"Verdana","sans-serif";color:#262626;mso-ansi-language:EN-US'><o:p></o:p></span></i></p>
+
+<p class=MsoBodyText style='margin-bottom:0in;margin-bottom:.0001pt'><i
+style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Verdana","sans-serif";color:black;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></i></p>
+
+<p class=MsoBodyText><span style='font-family:"Verdana","sans-serif";
+color:black;mso-ansi-language:EN-US'>8.</span><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Verdana","sans-serif";color:black;
+mso-ansi-language:EN-US'> </span><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+color:black;mso-ansi-language:EN-US'>Compile FFmpeg from source.<br
+style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-left:35.45pt'><span lang=RU
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";color:black'>Get the
+dependencies:</span><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-left:35.45pt'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+color:black;mso-ansi-language:EN-US'><br>
+#yum install autoconf automake gcc-c++ libtool make nasm pkgconfig zlib-devel
+git</span></b><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-left:35.45pt'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Verdana","sans-serif";color:black;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText style='margin-left:35.45pt'><span lang=RU
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";color:black'>Make a
+directory </span><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+color:black;mso-ansi-language:EN-US'>in “/root/” </span><span lang=RU
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";color:black'>to put
+all of the source code into:</span><span style='font-size:9.5pt;font-family:
+"Verdana","sans-serif";color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-left:35.45pt'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+color:black;mso-ansi-language:EN-US'>#cd /root<o:p></o:p></span></b></p>
+
+<p class=MsoBodyText style='margin-left:35.45pt'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+color:black;mso-ansi-language:EN-US'>#</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+color:black'>mkdir </span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";color:black;
+mso-ansi-language:EN-US'>~</span></b><b style='mso-bidi-font-weight:normal'><span
+lang=RU style='font-size:9.5pt;font-family:"Verdana","sans-serif";color:black'>/ffmpeg_sources</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:9.5pt;font-family:
+"Verdana","sans-serif";color:black;mso-ansi-language:EN-US'><o:p></o:p></span></b></p>
+
+<p class=MsoBodyText><b style='mso-bidi-font-weight:normal'><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";color:black;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyText style='margin-left:35.45pt'><span style='font-size:9.5pt;
+font-family:"Verdana","sans-serif";color:black;mso-ansi-language:EN-US'>Build/Install
+FFmpeg and codecs as follows:<o:p></o:p></span></p>
+
+<h3 style='margin-left:71.45pt;mso-list:l0 level3 lfo1;tab-stops:list 71.45pt'><a
+name=Yasm></a><span lang=RU style='font-size:10.5pt;mso-bidi-font-size:14.0pt;
+font-family:"Arial","sans-serif";mso-bidi-font-family:Mangal;color:black'>Yasm</span><span
+lang=RU style='font-size:10.0pt;mso-bidi-font-size:14.0pt;font-family:"Verdana","sans-serif";
+color:black;font-weight:normal;mso-bidi-font-weight:bold'><o:p></o:p></span></h3>
+
+<p class=MsoBodyText style='margin-left:35.45pt'><span lang=RU
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";color:black'>Yasm is
+an assembler used by x264 and FFmpeg.</span><span lang=RU style='font-size:
+9.5pt;color:black'><o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:solid silver 1.0pt;mso-border-alt:
+solid silver .25pt;padding:1.0pt 1.0pt 1.0pt 1.0pt;margin-left:35.45pt;
+margin-right:0in'>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>cd ~/ffmpeg_sources<o:p></o:p></span></p>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>curl -O
+http://www.tortall.net/projects/yasm/releases/yasm-1.2.0.tar.gz<o:p></o:p></span></p>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>tar xzvf yasm-1.2.0.tar.gz<o:p></o:p></span></p>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>cd yasm-1.2.0<o:p></o:p></span></p>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>./configure --prefix=&quot;$HOME/ffmpeg_build&quot;
+--bindir=&quot;$HOME/bin&quot;<o:p></o:p></span></p>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>make<o:p></o:p></span></p>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>make install<o:p></o:p></span></p>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>make distclean<o:p></o:p></span></p>
+
+<p class=PreformattedText style='margin-bottom:14.15pt;border:none;mso-border-alt:
+solid silver .25pt;padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span
+lang=RU style='color:black'>export &quot;PATH=$PATH:$HOME/bin&quot;</span><b
+style='mso-bidi-font-weight:normal'><span lang=RU style='font-size:10.5pt;
+mso-bidi-font-size:10.0pt;font-family:"Arial","sans-serif";mso-bidi-font-family:
+"Courier New";color:black'><o:p></o:p></span></b></p>
+
+</div>
+
+<h3 style='margin-left:35.45pt;text-indent:0in;mso-list:l0 level3 lfo1;
+tab-stops:list 71.45pt'><a name=Yasm></a><a name=libmp3lame></a><span lang=RU
+style='font-size:10.5pt;mso-bidi-font-size:14.0pt;font-family:"Arial","sans-serif";
+mso-bidi-font-family:Mangal;color:black'>libmp3lame</span><span lang=RU
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt;font-family:"Verdana","sans-serif";
+color:black;font-weight:normal;mso-bidi-font-weight:bold'><o:p></o:p></span></h3>
+
+<p class=MsoBodyText style='margin-left:35.45pt'><span lang=RU
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";color:black'>MP3
+audio encoder.</span><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-left:35.45pt'><span style='font-size:9.5pt;
+font-family:"Verdana","sans-serif";color:black;mso-ansi-language:EN-US'>Requires
+</span><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+color:#632423;mso-ansi-language:EN-US'>FFmpeg</span><span style='font-size:
+9.5pt;font-family:"Verdana","sans-serif";color:black;mso-ansi-language:EN-US'>
+to be configured with </span><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+color:#632423;mso-ansi-language:EN-US'>--enable-libmp3lame</span><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";color:black;
+mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:solid silver 1.0pt;mso-border-alt:
+solid silver .25pt;padding:1.0pt 1.0pt 1.0pt 1.0pt;margin-left:35.45pt;
+margin-right:0in'>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>cd ~/ffmpeg_sources<o:p></o:p></span></p>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>curl -L -O
+http://downloads.sourceforge.net/project/lame/lame/3.99/lame-3.99.5.tar.gz<o:p></o:p></span></p>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>tar xzvf lame-3.99.5.tar.gz<o:p></o:p></span></p>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>cd lame-3.99.5<o:p></o:p></span></p>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>./configure --prefix=&quot;$HOME/ffmpeg_build&quot;
+--bindir=&quot;$HOME/bin&quot; --disable-shared --enable-nasm<o:p></o:p></span></p>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>make<o:p></o:p></span></p>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>make install<o:p></o:p></span></p>
+
+<p class=PreformattedText style='margin-bottom:14.15pt;border:none;mso-border-alt:
+solid silver .25pt;padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span
+lang=RU style='color:black'>make distclean</span><b style='mso-bidi-font-weight:
+normal'><span lang=RU style='font-size:10.5pt;mso-bidi-font-size:10.0pt;
+font-family:"Arial","sans-serif";mso-bidi-font-family:"Courier New";color:black'><o:p></o:p></span></b></p>
+
+</div>
+
+<h3 style='margin-left:35.45pt;text-indent:0in;mso-list:l0 level3 lfo1;
+tab-stops:list 71.45pt'><a name=libopus></a><a name=FFmpeg></a><span lang=RU
+style='font-size:10.5pt;mso-bidi-font-size:14.0pt;font-family:"Arial","sans-serif";
+mso-bidi-font-family:Mangal;color:black'>FFmpeg</span><span lang=RU
+style='font-size:10.0pt;mso-bidi-font-size:14.0pt;color:black;font-weight:normal;
+mso-bidi-font-weight:bold'><o:p></o:p></span></h3>
+
+<div style='mso-element:para-border-div;border:solid silver 1.0pt;mso-border-alt:
+solid silver .25pt;padding:1.0pt 1.0pt 1.0pt 1.0pt;margin-left:35.45pt;
+margin-right:0in'>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>cd ~/ffmpeg_sources<o:p></o:p></span></p>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>git clone --depth 1 git://source.ffmpeg.org/ffmpeg<o:p></o:p></span></p>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>cd ffmpeg<o:p></o:p></span></p>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>PKG_CONFIG_PATH=&quot;$HOME/ffmpeg_build/lib/pkgconfig&quot;<o:p></o:p></span></p>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>export PKG_CONFIG_PATH<o:p></o:p></span></p>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>./configure --prefix=&quot;$HOME/ffmpeg_build&quot;
+--extra-cflags=&quot;-I$HOME/ffmpeg_build/include&quot; --extra-ldflags=&quot;-L$HOME/ffmpeg_build/lib&quot;
+--bindir=&quot;$HOME/bin&quot; --extra-libs=-ldl --enable-gpl --enable-nonfree --enable-libmp3lame<o:p></o:p></span></p>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>make<o:p></o:p></span></p>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>make install<o:p></o:p></span></p>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>make distclean<o:p></o:p></span></p>
+
+<p class=PreformattedText style='border:none;mso-border-alt:solid silver .25pt;
+padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span lang=RU
+style='color:black'>hash -r<o:p></o:p></span></p>
+
+<p class=PreformattedText style='margin-bottom:14.15pt;border:none;mso-border-alt:
+solid silver .25pt;padding:0in;mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt'><span
+lang=RU style='color:black'>. ~/.bash_profile</span><span style='mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoBodyText style='margin-left:35.45pt'><span style='font-size:9.5pt;
+font-family:"Verdana","sans-serif";mso-ansi-language:EN-US'><br>
+After all of this, FFmpeg will be compiled into “/root/bin/ffmpeg”.<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText><span style='font-family:"Verdana","sans-serif";
+mso-ansi-language:EN-US'>9.</span><span style='font-size:9.5pt;font-family:
+"Verdana","sans-serif";mso-ansi-language:EN-US'> Move the FFmpeg binary file
+from “/root/bin/ffmpeg” to “/usr/bin/ffmpeg”. Then set permissions of “/usr/bin/ffmpeg”
+to chmod 0777 and set ownership to the Apache user.<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText><span style='font-family:"Verdana","sans-serif";
+mso-ansi-language:EN-US'>10.</span><span style='font-size:9.5pt;font-family:
+"Verdana","sans-serif";mso-ansi-language:EN-US'> Don't forget to change
+ownership on your document root (web root) folder to user from which Apache is working:<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-left:.5in;text-indent:-.25in;mso-list:l1 level1 lfo4'><![if !supportLists]><span
+style='font-size:9.5pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;mso-ansi-language:EN-US;mso-bidi-font-weight:bold'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><b><span style='font-size:9.5pt;font-family:
+"Verdana","sans-serif";mso-ansi-language:EN-US'>#ps -aef | grep httpd</span></b><span
+style='font-size:9.5pt;font-family:"Verdana","sans-serif";mso-ansi-language:
+EN-US'> will show you which user is using Apache (in my case, it's “apache”)<b><o:p></o:p></b></span></p>
+
+<p class=MsoBodyText style='margin-left:.5in;text-indent:-.25in;mso-list:l1 level1 lfo4'><![if !supportLists]><span
+style='font-size:9.5pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;mso-ansi-language:EN-US;mso-bidi-font-weight:bold'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><b><span style='font-size:9.5pt;font-family:
+"Verdana","sans-serif";mso-ansi-language:EN-US'>chown -R apache:apache
+/var/www/html/<o:p></o:p></span></b></p>
+
+<p class=MsoBodyText><b><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyText><b><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoBodyText><b><span style='font-size:9.5pt;font-family:"Verdana","sans-serif";
+mso-ansi-language:EN-US'>You're <span class=GramE>done !!</span> <span
+style='mso-spacerun:yes'> </span></span></b><span class=GramE><b
+style='mso-bidi-font-weight:normal'><span style='font-size:9.5pt;font-family:
+"Verdana","sans-serif";mso-ansi-language:EN-US'>CentOS<span style='mso-bidi-font-weight:
+bold'> is</span></span></b></span><b><span style='font-size:9.5pt;font-family:
+"Verdana","sans-serif";mso-ansi-language:EN-US'> now ready for you to install
+and configure the MP3 Converter software, per <a href="../index.html#software-install">the provided
+documentation</a>.<o:p></o:p></span></b></p>
+
+</div>
+
+</body>
+
+</html>

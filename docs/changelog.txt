@@ -1,0 +1,52 @@
+Changelog:
+
+2022-08-09
+
+- Added easy, 1-click installation of Node.js via the software's initial "Config Check" utility
+- Modified "Config Check" utility so that Node.js test runs (and corresponding auto-install is enabled) only if YouTube module is present
+- Added _NODEJS constant to Config file, enabling Node.js installation in any valid, PHP-accessible directory
+- Provided the option to force IPv4 for all HTTP requests issued by a supported video/audio site module
+
+2021-12-14
+
+- Added/Updated/Removed supported video/audio hosting sites
+- Updated 3rd-party libraries and frameworks
+- Added easy, 1-click installation of FFmpeg and cURL via the software's initial "Config Check" utility
+- Moved misc. software resources and dependencies to a separate 'store' folder
+- Improved M3U8 playlist download support
+
+2020-11-26
+
+- Fixed an issue that sometimes prevented recognition of the requested video/audio hosting site prior to MP3 conversion, for PHP 7.3+
+
+2020-11-02
+
+- Enabled optional, custom User Agent string for each supported video/audio hosting site and corresponding module
+
+2020-03-21
+
+- Added Cloudflare SSL support to the internal HTTP request that ultimately executes MP3 conversion
+- Updated the temporary media file container format from FLV to MKV
+
+2020-01-02
+
+- Generally improved M3U8 playlist download support as well as enabled realtime M3U8 download progress, when possible
+
+2019-09-28
+
+- Fixed a bug that could potentially permit unauthorized downloads
+
+2019-06-15
+
+- Updated and improved video download URL extraction
+
+2016-02-26
+
+- Added support for the download (and conversion) of .m3u8 playlist files available from video/audio hosting sites
+- Updated the FAQ ("docs/faq.html")
+- Added this Changelog file ("docs/changelog.txt")
+
+2016-01-03
+
+- Added one meta tag to "inc/page_header.php" to improve display on Android phones/devices.
+- Updated command line instructions for installation on a CentOS 6.x system ("docs/config/CentOS-6.x-SETUP.htm").
