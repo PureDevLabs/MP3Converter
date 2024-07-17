@@ -18,9 +18,9 @@ This software requires the following server configuration:
 ### Changelog:
 
 <h5 id="item-description__2016-02-26">2024-07-17</h5>
-• Rebranded
-• Removed Licensing
-• Removed Encoding
+• Rebranded<br />
+• Removed Licensing<br />
+• Removed Encoding<br />
 • Added YouTube cookies support
 
 ###### Updated files
