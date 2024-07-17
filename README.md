@@ -1,9 +1,37 @@
-# MP3Converter
+## MP3 Converter
 
-MP3 Converter (CodeCanyon)
+### Requirements:
 
-## Changelog:
+This software requires the following server configuration:
 
+• Linux Server (All Linux distributions supported)\
+• For commercial servers: Shared†, Dedicated, and VPS hosting supported\
+• Apache\
+• PHP 5.6+\
+• cURL and PHP cURL extension enabled\
+• FFmpeg and libmp3lame packages installed\
+• Node.js\
+• That’s it!
+
+† Note: If you’re using a shared hosting plan, then please ensure that FFmpeg and cURL are supported and installed.
+
+### Changelog:
+
+<h5 id="item-description__2016-02-26">2024-07-17</h5>
+• Rebranded
+• Removed Licensing
+• Removed Encoding
+• Added YouTube cookies support
+
+###### Updated files
+```
+LICENSE (new)
+README.md
+```
+<hr>
+
+<h5 id="item-description__2016-02-26">2024-05-01</h5>
+• Added support for forcing IPv6- or IPv4-only HTTP requests to supported websites
 <h5 id="item-description__2016-02-26">2024-03-26</h5>
 • Added support for passing site-specific HTTP headers to media download requests<br />
 <h5 id="item-description__2016-02-26">2022-08-09</h5>
