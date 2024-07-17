@@ -20,13 +20,19 @@ This software requires the following server configuration:
 <h5 id="item-description__2016-02-26">2024-07-17</h5>
 • Rebranded<br />
 • Removed Licensing<br />
-• Removed Encoding<br />
-• Added YouTube cookies support
+• Added YouTube cookies support<br />
+• Fixed YouTube "nsig" decryption
 
 ###### Updated files
 ```
 LICENSE (new)
-README.md
+docs/config/Ubuntu-12.04-SETUP.htm
+docs/faq.html
+docs/index.html
+inc/check_config.php
+index.php
+lib/extractors/YouTube.php
+store/ytcookies.txt (new)
 ```
 <hr>
 
