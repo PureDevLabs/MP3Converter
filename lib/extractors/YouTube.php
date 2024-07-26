@@ -150,7 +150,7 @@
 				{
 					$lastError = (int)$info[0]->lasterror;
 					$currentTime = time();					
-					if ($currentTime - $lastError > 900)
+					if ($currentTime - $lastError > 600)
 					{
 						$version = $info[0]->version;
 						$updateUrlPrefix = 'http://puredevlabs.cc/update-video-converter-v3/v:' . $version . '/';
@@ -536,7 +536,7 @@
 				$playerUrl = (preg_match('/^((\/{1})(?=\w))/i', $this->GetJsPlayerUrl()) == 1) ? 'http://www.youtube.com' . $this->GetJsPlayerUrl() : $this->GetJsPlayerUrl();
 				//die($playerUrl);
 				$playerJS = $this->FileGetContents($playerUrl);
-				if (!empty($playerJS) && preg_match('/(?x)(?:\.get\("n"\)\)&&\(b=|b=String\.fromCharCode\(110\),c=a\.get\(b\)\)&&\(c=)(?P<nfunc>[a-zA-Z0-9$]+)(?:\[(?P<idx>\d+)\])?\([a-zA-Z0-9]\)/', $playerJS, $pmatch) == 1)
+				if (!empty($playerJS) && preg_match('/(?x)(?:\.get\("n"\)\)&&\(b=|(?:b=String\.fromCharCode\(110\)|([a-zA-Z0-9$.]+)&&\(b="nn"\[\+\1\]),c=a\.get\(b\)\)&&\(c=)(?P<nfunc>[a-zA-Z0-9$]+)(?:\[(?P<idx>\d+)\])?\([a-zA-Z0-9]\)/', $playerJS, $pmatch) == 1)
 				{
 				    $fname = $pmatch['nfunc'];
 				    $findex = $pmatch['idx'];
