@@ -26,8 +26,8 @@
 		private $_jsPlayerUrl = '';
 		private $_nsigs = array();
 		private $_nodeJS = '';
-		protected $_mainUserAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36';
-		protected $_ipVersion = 4;
+		protected $_mainUserAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36';
+		protected $_ipVersion = 6;
 		protected $_params = array(
 			'name' => 'YouTube',
 			'abbreviation' => 'yt',
@@ -536,7 +536,7 @@
 				$playerUrl = (preg_match('/^((\/{1})(?=\w))/i', $this->GetJsPlayerUrl()) == 1) ? 'http://www.youtube.com' . $this->GetJsPlayerUrl() : $this->GetJsPlayerUrl();
 				//die($playerUrl);
 				$playerJS = $this->FileGetContents($playerUrl);
-				if (!empty($playerJS) && preg_match('/(?x)(?:\.get\("n"\)\)&&\(b=|(?:b=String\.fromCharCode\(110\)|([a-zA-Z0-9$.]+)&&\(b="nn"\[\+\1\]),c=a\.get\(b\)\)&&\(c=)(?P<nfunc>[a-zA-Z0-9$]+)(?:\[(?P<idx>\d+)\])?\([a-zA-Z0-9]\)/', $playerJS, $pmatch) == 1)
+				if (!empty($playerJS) && preg_match('/(?x)(?:\.get\("n"\)\)&&\(b=|(?:b=String\.fromCharCode\(110\)|(?P<str_idx>[a-zA-Z0-9_$.]+)&&\(b="nn"\[\+(?P=str_idx)\]),c=a\.get\(b\)\)&&\(c=|\b(?P<var>[a-zA-Z0-9_$]+)=)(?P<nfunc>[a-zA-Z0-9_$]+)(?:\[(?P<idx>\d+)\])?\([a-zA-Z]\)(?(var),[a-zA-Z0-9_$]+\.set\("n"\,(?P=var)\),(?P=nfunc)\.length)/', $playerJS, $pmatch) == 1)
 				{
 				    $fname = $pmatch['nfunc'];
 				    $findex = $pmatch['idx'];
