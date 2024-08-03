@@ -17,10 +17,20 @@ This software requires the following server configuration:
 
 ### Changelog:
 
+<h5 id="item-description__2016-02-26">2024-07-26</h5>
+• Another update to YouTube "nsig" decryption
+
+###### Updated files
+```
+README.md
+lib/extractors/YouTube.php
+```
+<hr>
+
 <h5 id="item-description__2016-02-26">2024-07-17</h5>
 • Rebranded<br />
 • Removed Licensing<br />
-• Added YouTube cookies support<br />
+• Added <a href="https://shop.rajwebconsulting.com/knowledgebase/54/Using-YouTube-login-cookies-to-access-restricted-content.html">YouTube cookies support</a><br />
 • Fixed YouTube "nsig" decryption
 
 ###### Updated files
