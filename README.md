@@ -17,6 +17,16 @@ This software requires the following server configuration:
 
 ### Changelog:
 
+<h5 id="item-description__2016-02-26">2024-08-06</h5>
+• Yet another update to YouTube "nsig" decryption
+
+###### Updated files
+```
+README.md
+lib/extractors/YouTube.php
+```
+<hr>
+
 <h5 id="item-description__2016-02-26">2024-08-03</h5>
 • Another update to YouTube "nsig" decryption<br>
 • Updated default user agent and IP version used in YouTube requests
